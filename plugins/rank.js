@@ -40,10 +40,18 @@ CURRENTLY RUNNING ON BETA VERSION!!
    * SOFTWARE.
 **/
 
-const { smd, botpic,  RandomXP,send, Config, tlang,  sleep,getBuffer, prefix } = require('../lib')
-const moment = require("moment-timezone");
+const { 
+	smd, 
+	botpic,
+	send,
+	Config, 
+	tlang, 
+	sleep,
+	smdBuffer,
+	prefix
+	} = require('../lib')
 const Levels = require("discord-xp");
-
+try{ let ty = Levels.setURL(mongodb); }catch{}
 //============================================================================
 
 
@@ -93,9 +101,6 @@ smd({
 	else if (lvpoints <= 55) { var role = "🐉Immortal"; }
 	
             let ttms = userq.xp / 8;
-            
-           // const timenow = moment(moment()).format('HH:mm:ss')
-           // moment.tz.setDefault(global.timezone).locale('id')
 	var pfp; try { pfp = await message.bot.profilePictureUrl(meh, "image"); }catch{  pfp = await botpic();   }
   var naam_ser;try{ naam_ser = await message.bot.getName(meh) } catch{}
             

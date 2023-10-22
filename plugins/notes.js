@@ -1,93 +1,153 @@
-const { addnote, smd, delnote, allnotes, delallnote, tlang,botpic, prefix, Config } = require('../lib')
+/**
+
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+//                                                                                                      //
+//                                ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ ＢＥＴＡ                                   //
+//                                                                                                      // 
+//                                         Ｖ：１．０．１                                                // 
+//                                                                                                      // 
+//            ███████╗██╗   ██╗██╗  ██╗ █████╗ ██╗██╗         ███╗   ███╗██████╗                        //
+//            ██╔════╝██║   ██║██║  ██║██╔══██╗██║██║         ████╗ ████║██╔══██╗                       //
+//            ███████╗██║   ██║███████║███████║██║██║         ██╔████╔██║██║  ██║                       //
+//            ╚════██║██║   ██║██╔══██║██╔══██║██║██║         ██║╚██╔╝██║██║  ██║                       //
+//            ███████║╚██████╔╝██║  ██║██║  ██║██║███████╗    ██║ ╚═╝ ██║██████╔╝                       //
+//            ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝     ╚═╝╚═════╝                        //
+//                                                                                                      //
+//                                                                                                      //
+//                                                                                                      //
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+
+CURRENTLY RUNNING ON BETA VERSION!!
+*
+   * @project_name : Suhail-Md
+   * @author : Suhail Tech Info
+   * @youtube : https://www.youtube.com/c/@SuhailTechInfo0
+   * @infoription : Suhail-Md ,A Multi-functional whatsapp user bot.
+   * @version 1.2.3 
+*
+   * Licensed under the  GPL-3.0 License;
+* 
+   * ┌┤Created By Suhail Tech Info.
+   * © 2023 Suhail-Md ✭ ⛥.
+   * plugin update : 10/22/2023
+* 
+   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   * SOFTWARE.
+**/
+
+
+
+
+
+const {
+     note, 
+     smd,
+     prefix 
+    } = require('../lib')
 
 //---------------------------------------------------------------------------
 smd({
-            cmdname: "delnote",
-            type: "notes",
-            filename: __filename,
-            info: "Deletes note from db.",
-            use: '< note id | 1 >',
-        },
-        async(message, match,) => {
-            try{
-                if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
-                if (!message.isCreator) return message.reply(tlang().owner)
-                let id = match.split(' ')[0];
-                if (!id || isNaN(id)) { return message.reply("*Provide Note ID. Example: .delnote 1*"); }
-                await delnote(id)
-                return await message.reply(`*Note with ID '${id}' has been deleted from MongoDB.*`);
-            }catch(e){ await message.error(`${e}\n\ncommand: delnote`,e,`*Can't fetch data,please check MONGODB_URI!!*`) }
-        }
-    )
+           cmdname: "delnote",
+           type: "notes",
+           filename: __filename,
+ fromMe:true,
+           info: "Deletes note from db.",
+           use: '< note id | 1 >',
+       },
+       async(message, match) => {
+           try{
+               let id = match.split(' ')[0];
+               if (!id || isNaN(id)) { return message.reply(`*Provide Note ID, Example: ${prefix}delnote 1*`); }
+               let res = await note.delnote(message,id)
+               return await message.reply(res.msg);
+           }catch(e){ await message.error(`${e}\n\ncommand: delnote`,e,) }
+       }
+   )
 //---------------------------------------------------------------------------
 
 smd({
-    cmdname: "delallnote",
-    type: "notes",
-    filename: __filename,
-    info: "Deletes all notes from db."
+   cmdname: "delallnote",
+   type: "notes",
+ fromMe:true,
+   filename: __filename,
+   info: "Deletes all notes from db."
 },
 async(message) => {
-    try{
-        if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
-        if (!message.isCreator) return message.reply(tlang().owner)
-        await delallnote()
-        return message.reply(`All notes deleted from mongodb.`)
-    }catch(e){ await message.error(`${e}\n\ncommand: delallnotes`,e,`*Can't fetch data,please check MONGODB_URI!!*`) }
+   try{
+     let res = await note.delallnote(message)
+     return await message.reply(res.msg);
+   }catch(e){ await message.error(`${e}\n\ncommand: delallnotes`,e,) }
 }
 )
 //---------------------------------------------------------------------------
 smd({
-    cmdname: "allnote",
-    type: "notes",
-    filename: __filename,
-    info: "Shows list of all notes."
+   cmdname: "allnote",
+   type: "notes",
+   filename: __filename,
+ fromMe:true,
+   info: "Shows list of all notes."
 },
 async(message,) => {
-    try{
-        if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
-        if (!message.isCreator) return message.reply(tlang().owner)
-    let leadtext = `All Available Notes are:-\n\n`
-    leadtext += await allnotes()
-    return message.reply(leadtext)
-}catch(e){ await message.error(`${e}\n\ncommand: delallnotes`,e,`*Can't fetch data,please check MONGODB_URI!!*`) }
+   try{
+     let res = await note.allnotes(message,"all")
+     return await message.reply(res.msg);
+}catch(e){ await message.error(`${e}\n\ncommand: delallnotes`,e,`*Can't fetch data, Sorry!!*`) }
+}
+)
+//---------------------------------------------------------------------------
+smd({
+ cmdname: "getnote",
+ type: "notes",
+ filename: __filename,
+fromMe:true,
+ info: "Shows note by id.",
+ use: '< id|1|2 >',
+},
+async(message,match) => {
+ try{
+   if(!match)return await  message.reply(`*Provide Note ID, Ex: ${prefix}getnote id|1|2|..*`); 
+   let res = await note.allnotes(message,match.split(" ")[0].toLowerCase().trim())
+   return await message.reply(res.msg);
+}catch(e){ await message.error(`${e}\n\ncommand: getnote`,e,`*Can't fetch data, Sorry!!*`) }
 }
 )
 
- //---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 
 smd({
-            cmdname: "addnote",
-            type: "notes",
-            info: "Adds a note on db.",
-            filename: __filename,
-            use: '< text >',
-        },
-        async( message, match,) => {
-            try{                
-                if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
-            if (!message.isCreator) return message.reply(tlang().owner)
-            let text =  match?match : message.reply_text
-            if (!text) return message.reply("🔍 Please provide me a valid gist url.")
-            await addnote(text)
-            return message.reply(`New note ${text} added in mongodb.`)
-        }catch(e){ await message.error(`${e}\n\ncommand: addnote`,e,`*Can't fetch data,please check MONGODB_URI!!*`) }
-        }
-    )
- //---------------------------------------------------------------------------
+           cmdname: "addnote",
+           type: "notes",
+           info: "Adds a note on db.",
+ fromMe:true,
+           filename: __filename,
+           use: '< text >',
+       },
+       async( message, match,) => {
+       try{                
+           if (!match) return await message.reply(`*Please provide text to save in notes!*`)
+           let res = await note.addnote(message,match)
+           return await message.reply(res.msg);
+       }catch(e){ await message.error(`${e}\n\ncommand: addnote`,e,) }
+       }
+   )
+//---------------------------------------------------------------------------
 //                  ADD NOTE  COMMANDS
 //---------------------------------------------------------------------------
 
 smd({
-    cmdname: "note",
-    type: "notes",
-    filename: __filename,
-    info: "Shows list of all notes."
+   cmdname: "note",
+   type: "notes",
+ fromMe:true,
+   filename: __filename,
+   info: "Shows list of all notes."
 },
 async(message, text,{smd}) => {
-    try{                
-        if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
-        if (!message.isCreator) return message.reply(tlang().owner)
+   try{                
 let txt = `╭───── *『 MONGODB NOTES 』* ───◆
 ┃ Here You Can Store Notes For Later Use
 ┃ *------------------------------------------*
@@ -113,29 +173,25 @@ let txt = `╭───── *『 MONGODB NOTES 』* ───◆
 ╰━━━━━━━━━━━━━━━━━━━━━━──⊷` ; 
 
 
-        if (!text) return await message.reply(txt);
-        let action = text.split(' ')[0].trim().toLowerCase()
+       if (!text) return await message.reply(txt);
+       let action = text.split(' ')[0].trim().toLowerCase()
 
-        if(action === "add"  || action === "new" ){
-            let txt = text.replace("add", "").replace("new", "")
-            await addnote(txt)
-            return await message.reply(`New note "${txt}" added in mongodb.`)
-        }else if(action === "all"){
-            const note_store = new Array()
-            let leadtext = `*All Available Notes are:-*\n\n`
-            leadtext += await allnotes()
-            return await message.reply(leadtext)
-        }else if(action === "delall"){
-            await delallnote()
-            return await message.reply(`All notes deleted from mongodb.`)
-        }else if(action === "del"){
-            try{
-                let id = text.split(' ')[1];
-                if (!id || isNaN(id)) { return message.reply("*Uhh Please, Provide Note ID. Example: .delnote 1*"); }
-                await delnote(id)
-                return await message.reply(`Note with ID : ${id} has been deleted from MongoDB.`);
-            } catch (error) {return message.reply("Uhh Please, Provide a Note ID. Example: .notes del 1"); }
-        }else { return await message.reply(txt) ; }
+       if(action === "add"  || action === "new" ){
+         let res = await note.addnote(message,text.replace("add", "").replace("new", ""))
+         return await message.reply(res.msg);
+       }else if(action === "all"){
+         let res = await note.allnotes(message,"all")
+         return await message.reply(res.msg);
+       }else if(action === "delall"){
+         let res = await note.delallnote(message)
+         return await message.reply(res.msg);
+       }else if(action === "del"){
+         let id = text.split(' ')[1];
+         if (!id || isNaN(id)) { return message.reply("*Uhh Please, Provide Note ID. Example: .delnote 1*"); }
+         let res = await note.delnote(message,id)
+         return await message.reply(res.msg);
+       }else { return await message.reply(`*Invalid action provided, please follow* \n\n${txt}`) ; }
 
-    }catch(e){ await message.error(`${e}\n\ncommand: addnote`,e,`*Can't fetch data,please check MONGODB_URI!!*`) }
+   }catch(e){ await message.error(`${e}\n\ncommand: addnote`,e,`*Can't fetch data, Sorry!*`) }
 })
+
