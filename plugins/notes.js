@@ -50,6 +50,16 @@ const {
      prefix 
     } = require('../lib')
 
+
+/*
+{
+   cmdname: "notes",
+   type: "notes",
+}
+ */
+
+
+
 //---------------------------------------------------------------------------
 smd({
            cmdname: "delnote",

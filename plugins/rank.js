@@ -4,7 +4,7 @@
 //                                                                                                      //
 //                                ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ ＢＥＴＡ                                   //
 //                                                                                                      // 
-//                                         Ｖ：１．０．１                                                // 
+//                                         Ｖ：1．2．2                                                   // 
 //                                                                                                      // 
 //            ███████╗██╗   ██╗██╗  ██╗ █████╗ ██╗██╗         ███╗   ███╗██████╗                        //
 //            ██╔════╝██║   ██║██║  ██║██╔══██╗██║██║         ████╗ ████║██╔══██╗                       //
@@ -23,7 +23,7 @@ CURRENTLY RUNNING ON BETA VERSION!!
    * @author : Suhail Tech Info
    * @youtube : https://www.youtube.com/c/@SuhailTechInfo0
    * @infoription : Suhail-Md ,A Multi-functional whatsapp user bot.
-   * @version 1.2.3 
+   * @version 1.2.2 
 *
    * Licensed under the  GPL-3.0 License;
 * 
@@ -39,7 +39,7 @@ CURRENTLY RUNNING ON BETA VERSION!!
    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
    * SOFTWARE.
 **/
-
+let bots = false;
 const { 
 	smd, 
 	botpic,
@@ -48,11 +48,52 @@ const {
 	tlang, 
 	sleep,
 	smdBuffer,
-	prefix
+	prefix,
+	bot_
 	} = require('../lib')
 const Levels = require("discord-xp");
-try{ let ty = Levels.setURL(mongodb); }catch{}
+try{ if(isMongodb)(Levels.setURL(mongodb)) }catch{}
 //============================================================================
+
+
+smd({
+	pattern: "levelup",
+	desc: "turn On/Off auto levelup",
+	fromMe : true,
+	category: "level",
+use:"<on/off>",
+	filename: __filename,
+},
+async(message,text)=>{
+try{
+	if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
+let bgmm = await bot_.findOne({ id: `bot_${message.user}` }) || await bot_.new({id: `bot_${message.user}` });
+let toggle = text.toLowerCase().split()[0].trim();
+if (toggle === 'on'|| toggle === 'enable' || toggle ==='act') {
+if(bgmm.levelup === 'true') return await message.reply("*levelup already enabled!*");
+await bot_.updateOne({ id: `bot_${message.user}` }, { levelup: 'true' });
+return await message.reply("*levelup Succesfully enabled*");
+}else if (toggle === 'off'|| toggle === 'disable' || toggle ==='deact') {
+if(bgmm.levelup === 'false') return await message.reply("*levelup already disabled*");
+await bot_.updateOne({ id: `bot_${message.user}` }, { levelup: 'false' });
+return await message.reply("*levelup Succesfully deactivated*");
+} else return await message.send(`*_Use on/off to enable/disable levelup!_*`)
+}catch(e){ await message.error(`${e}\n\nCommand: levelup `,e)   }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -60,7 +101,8 @@ try{ let ty = Levels.setURL(mongodb); }catch{}
 smd({
             cmdname: "profile",
             info: "Shows profile of user.",
-            type: "general",
+            type: "level",
+			use:"<@user>",
             filename: __filename,
         },
         async(message) => {
@@ -117,7 +159,7 @@ const profile = `
             
 
             message.bot.sendMessage(message.chat, { image: { url: pfp },caption: profile }, { quoted: message });
-          }catch(e){ await message.error(`${e}\n\ncommand: tagall`,e,`*Can't fetch data,please ask owner to add mongodb!!*`) }
+          }catch(e){ await message.error(`${e}\n\ncommand: tagall`,e,`*Can't fetch data,please check mongodb!!*`) }
         }
     )
 
@@ -127,7 +169,8 @@ const profile = `
 smd({
             cmdname: "rank",
             info: "Sends rank card of user.",
-            type: "general",
+            type: "level",
+			use:"<@user>",
             filename: __filename,
         },
         async(message) => {
@@ -189,7 +232,8 @@ smd({
             cmdname: "leaderboard",
             alias: ["deck"],
             info: "To check leaderboard",
-            type: "general",
+            type: "level",
+			use:"<@user>",
             filename: __filename,
         },
         async(message) => {
@@ -247,9 +291,17 @@ leadtext += `*${i + 1}●Name*: ${naam_ser}
 
 
 	smd({ on: "text" }, async(message) => {
-if (!isMongodb) return;
+
+
+
     try{
-    
+
+
+
+
+
+    if(!bots) bots = await bot_.findOne({id: `bot_${msg.user}` }); 
+    if(!bots || !global.isMongodb) return 
 	    const randomXp = 8;
 	    let usrname = message.senderName
 	    const hasLeveledUp = await Levels.appendXp(message.sender, "RandomXP", randomXp);
@@ -283,8 +335,8 @@ if (!isMongodb) return;
 		    else if (lvpoints <= 55) { var role = "🐉Immortal"; }
 		    
 
-		    if(Config.levelupmessage && Config.levelupmessage == 'true') {
-			    await message.bot.sendMessage(message.chat, { image: {  url: await botpic() },
+		    if(bots.levelup && bots.levelup ==="true" ) {
+			    await message.bot.sendUi(message.chat,{
 			caption: `
 ╔════◇
 ║ *Wow,Someone just*

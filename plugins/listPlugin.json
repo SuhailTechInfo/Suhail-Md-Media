@@ -1,0 +1,10 @@
+{          
+    "Auther": "SUHAIL TECH INFO",
+    "whatsapp":   "https://wa.me/923184474176",
+    "":"List Of Plugins For Suhail Md Bot",
+
+    "result": [
+        {  "name": "notes","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js"   },          
+        {  "name": "levelup","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/rank.js"   }
+    ]
+}
