@@ -54,7 +54,7 @@ const {
 const Levels = require("discord-xp");
 try{ if(isMongodb)(Levels.setURL(mongodb)) }catch{}
 //============================================================================
-
+let utd = false;
 
 smd({
 	pattern: "levelup",
@@ -69,6 +69,7 @@ try{
 	if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
 let bgmm = await bot_.findOne({ id: `bot_${message.user}` }) || await bot_.new({id: `bot_${message.user}` });
 let toggle = text.toLowerCase().split()[0].trim();
+utd = true;
 if (toggle === 'on'|| toggle === 'enable' || toggle ==='act') {
 if(bgmm.levelup === 'true') return await message.reply("*levelup already enabled!*");
 await bot_.updateOne({ id: `bot_${message.user}` }, { levelup: 'true' });
@@ -296,12 +297,9 @@ leadtext += `*${i + 1}●Name*: ${naam_ser}
 
     try{
 
-
-
-
-
-    if(!bots) bots = await bot_.findOne({id: `bot_${msg.user}` }); 
+		if(!bots || utd ){ bots = await bot_.findOne({id: `bot_${msg.user}` }); utd=false} 
     if(!bots || !global.isMongodb) return 
+	
 	    const randomXp = 8;
 	    let usrname = message.senderName
 	    const hasLeveledUp = await Levels.appendXp(message.sender, "RandomXP", randomXp);
