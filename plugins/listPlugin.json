@@ -1,11 +1,19 @@
 {          
     "Auther": "SUHAIL TECH INFO",
     "whatsapp":   "https://wa.me/923184474176",
-    "":"List Of Plugins For Suhail Md Bot",
-
+    "purpose":"List Of Plugins For Suhail Md Bot",
+    "external": [ ],
     "result": [
         {  "name": "notes","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js"   },   
-        {  "name": "anticall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js"   },       
+        {  "name": "anticall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js"   },
+        {  "name": "status saver","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/status_save.js"   },         
         {  "name": "levelup","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/rank.js"   }
     ]
+
+
+
+
+
+
+
 }
