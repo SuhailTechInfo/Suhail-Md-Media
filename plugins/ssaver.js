@@ -65,12 +65,12 @@ const {
  */
 
     smd({
-         pattern: "#",
-         on: "text",
+         pattern: "#",         
          desc: "Save whatsapp status",
          category: "whatsapp",
          use:"< status >",
-         filename: __filename
+         filename: __filename,
+         on: "text"
       },
       async(message,text,{smd}) => {
          try{
