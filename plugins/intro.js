@@ -20,7 +20,7 @@
 CURRENTLY RUNNING ON BETA VERSION!!
 *
    * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
+   * @author : Suhail <https://github.com/SuhailTechInfo>
    * @youtube : https://www.youtube.com/c/@SuhailTechInfo0
    * @infoription : Suhail-Md ,A Multi-functional whatsapp user bot.
    * @version 1.2.2 
@@ -42,44 +42,42 @@ CURRENTLY RUNNING ON BETA VERSION!!
 
 
 
+const { smd, Config,smdBuffer,  prefix } = require('../lib')
 
-const { 
-   smd, 
-   botpic,
-   send,
-   Config, 
-   tlang, 
-   sleep,
-   smdBuffer,
-   prefix,
-   bot_
-   } = require('../lib')
- 
- 
 
-/*
-{
-   cmdname: "ssaver",
-   type: "notes",
-}
- */
+var surl = 'https://github.com/SuhailTechInfo/Secktor-bot' // Source URL
+const number = '923184474176'
+var name = ' Suhail Tech'
+var body = '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯'
+var image = 'https://telegra.ph/file/1e60489705c851f74b55e.jpg'
+let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄
+│       「 𝗠𝗬 𝗜𝗡𝗧𝗥𝗢 」
+│ Name      : sυнαɪʟ ᴛᴇᴄʜ ɪиғօ
+│ Place       : ʟαнᴏʀᴇ ᴘᴋ
+│ Gender    :  ᴍᴀʟᴇ
+│ Age          : 22_
+│ Phone     : wa.me/923184474176
+│ Youtube   : Youtube.com/c/SuhailTechInfo
+│ Status     : ɢᴀᴍᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ
+╰═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄`
 
-    smd({
-         pattern: "#",
-         on: "text",
-         desc: "Save whatsapp status",
-         category: "whatsapp",
-         use:"< status >",
-         filename: __filename
-      },
-      async(message,text,{smd}) => {
-         try{
-             let mm = message.reply_message && message.reply_message.status? message.reply_message : false;
-             if(!mm && smd) return await message.send("*Uhh Please, reply to whatsapp status*")
-             else if(!mm) return 
-             if(text.toLowerCase().includes("send") || text.toLowerCase().includes("save") || smd){
-                 return await message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
-             }
- 
-         }catch(e){if(smd) await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
-      })
+
+
+ //---------------------------------------------------------------------------
+ smd({
+             pattern: "intro",
+             desc: "Show intro of user",
+             category: "fun",
+             filename: __filename,
+             use: '<group link.>',
+         },
+         async(message) => {
+    try{
+          let media ;try{ media = await smdBuffer(image) }catch{media = log0}
+           const q =await message.bot.fakeMessage("contact",{},name) 
+           let contextInfo = {...(await message.bot.contextInfo(name,body,media,1,surl, 2) )}
+           await message.send(text, {contextInfo : contextInfo },"suhail",  q )
+    }catch(e){ await message.error(`${e}\n\ncommand: intro`,e,false)}
+
+
+ })

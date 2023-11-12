@@ -1,5 +1,4 @@
 /**
-
 //══════════════════════════════════════════════════════════════════════════════════════════════════════//
 //                                                                                                      //
 //                                ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ ＢＥＴＡ                                   //
@@ -20,7 +19,7 @@
 CURRENTLY RUNNING ON BETA VERSION!!
 *
    * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
+   * @author : Suhail <https://github.com/SuhailTechInfo>
    * @youtube : https://www.youtube.com/c/@SuhailTechInfo0
    * @infoription : Suhail-Md ,A Multi-functional whatsapp user bot.
    * @version 1.2.2 
@@ -42,44 +41,46 @@ CURRENTLY RUNNING ON BETA VERSION!!
 
 
 
+const { smd, Config,  prefix } = require('../lib')
 
-const { 
-   smd, 
-   botpic,
-   send,
-   Config, 
-   tlang, 
-   sleep,
-   smdBuffer,
-   prefix,
-   bot_
-   } = require('../lib')
- 
- 
 
-/*
-{
-   cmdname: "ssaver",
-   type: "notes",
-}
- */
 
-    smd({
-         pattern: "#",
-         on: "text",
-         desc: "Save whatsapp status",
-         category: "whatsapp",
-         use:"< status >",
-         filename: __filename
-      },
-      async(message,text,{smd}) => {
-         try{
-             let mm = message.reply_message && message.reply_message.status? message.reply_message : false;
-             if(!mm && smd) return await message.send("*Uhh Please, reply to whatsapp status*")
-             else if(!mm) return 
-             if(text.toLowerCase().includes("send") || text.toLowerCase().includes("save") || smd){
-                 return await message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
-             }
- 
-         }catch(e){if(smd) await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
-      })
+
+//---------------------------------------------------------------------------
+smd({
+            pattern: "live",
+            desc: "Show Live Time Of Pakistan",
+            category: "fun",
+            filename: __filename,
+            use: '<group link.>',
+        },
+        async(message) => {
+            try{
+var time = `${message.time}`.replace("am",'ᴀᴍ').replace("pm",'ᴘᴍ')
+var date = message.date
+const [hours, minutes, seconds, ampm] = `${message.time}`.split(/:| /);
+const hrs = parseInt(hours, 10);
+
+          var wish = '';
+          if(ampm == "am"){
+          if ( hrs >= 0 && hrs < 5)  wish = 'ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ, ᴇᴀʀʟʏ ʙɪʀᴅ! 🌄'; 
+          else if (hrs >= 5 && hrs < 12) wish = 'ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ⛅';
+          }else {
+            if (hrs >= 0 && hrs < 5) wish = 'ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌞';
+            else if (hrs >= 5 && hrs < 8) wish = 'ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥';
+            else wish = 'ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙';
+          }
+const q =await message.bot.fakeMessage("order") 
+let contextInfo = {...(await message.bot.contextInfo() )}
+let timenow =`
+╭────────────────╮
+│    *${wish}* 
+│     *ᴛɪᴍᴇ* ⌚ ${time} 
+│     *Date* 🎲   ${date} 
+│   ${Config.caption}
+╰────────────────╯
+`
+await message.send(timenow, {contextInfo : contextInfo },"suhail",  q )
+        }catch(e){ await message.error(`${e}\n\ncommand: live`,e,false)}
+
+})

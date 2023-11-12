@@ -4,6 +4,8 @@
     "purpose":"List Of Plugins For Suhail Md Bot",
     "external": [ ],
     "result": [
+        {  "name": "live","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js"   }, 
+        {  "name": "intro","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/intro.js"   }, 
         {  "name": "notes","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js"   },   
         {  "name": "areact","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/areact.js"   },  
         {  "name": "anticall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js"   },
