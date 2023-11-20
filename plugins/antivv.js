@@ -41,7 +41,7 @@ CURRENTLY RUNNING ON BETA VERSION!!
 **/
 
 /*
-cmd({
+{
    pattern :"antivv",
    desc: "send tweets of given text",
    category: "say",
