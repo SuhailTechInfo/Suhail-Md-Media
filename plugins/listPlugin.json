@@ -1,7 +1,4 @@
 {          
-    "Auther": "SUHAIL TECH INFO",
-    "whatsapp":   "https://wa.me/923184474176",
-    "purpose":"List Of Plugins For Suhail Md Bot",
     "external": [ ],
     "result": [
         {  "name": "live","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js"   }, 
@@ -10,7 +7,12 @@
         {  "name": "areact","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/areact.js"   },  
         {  "name": "anticall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js"   },
         {  "name": "status_saver","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ssaver.js"   },         
-        {  "name": "levelup","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/rank.js"   }
+        {  "name": "levelup","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/rank.js"   },
+        {  "name": "xmedia","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xmedia.js"   },
+        {  "name": "antivv","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/antivv.js"   },
+        {  "name": "delete","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delete.js"   },
+        {  "name": "audio","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/audio.js"   },
+        {  "name": "logo","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/logo.js"   }
     ]
 
 

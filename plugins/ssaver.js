@@ -58,10 +58,13 @@ const {
  
 
 /*
-{
-   cmdname: "ssaver",
-   type: "notes",
-}
+cmd({
+   pattern :"ssaver",
+   desc: "Save whatsapp status",
+   category: "whatsapp",
+   use:"< status >",
+   filename: __filename,
+})
  */
 
     smd({
