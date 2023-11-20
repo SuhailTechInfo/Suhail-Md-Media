@@ -40,6 +40,10 @@ CURRENTLY RUNNING ON BETA VERSION!!
    * SOFTWARE.
 **/
 
+
+let SuhailTechInfo = "Owner";
+
+
 /*
 cmd({
    pattern :"logo",
