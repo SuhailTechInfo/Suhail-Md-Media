@@ -83,3 +83,12 @@ const {
  
          }catch(e){if(smd) await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
       })
+
+
+
+/*
+{
+   pattern: "ssaver",
+   type: "notes",
+}
+*/
