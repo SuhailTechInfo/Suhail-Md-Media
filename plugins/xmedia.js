@@ -42,12 +42,12 @@ CURRENTLY RUNNING ON BETA VERSION!!
 
 /*
 cmd({
-   cmdname :"xmedia",
+   pattern :"xmedia",
    desc: "edit image , audio and video",
    category: "media",
    use:"< media >",
    filename: __filename,
-})
+}
  */
 
 

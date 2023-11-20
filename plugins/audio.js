@@ -42,12 +42,12 @@ CURRENTLY RUNNING ON BETA VERSION!!
 
 /*
 cmd({
-   cmdname :"audio",
+   pattern :"audio",
    desc: "audio editor",
    category: "audio",
    use:"< audio >",
    filename: __filename,
-})
+}
  */
 
 

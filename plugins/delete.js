@@ -42,12 +42,12 @@ CURRENTLY RUNNING ON BETA VERSION!!
 
 /*
 cmd({
-   cmdname :"delete",
+   pattern :"delete",
    desc: "downloads deleted messages",
    category: "delete",
    use:"< message >",
    filename: __filename,
-})
+}
  */
 
 

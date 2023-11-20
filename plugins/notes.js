@@ -53,7 +53,7 @@ const {
 
 /*
 {
-   cmdname: "notes",
+   pattern: "notes",
    type: "notes",
 }
  */
