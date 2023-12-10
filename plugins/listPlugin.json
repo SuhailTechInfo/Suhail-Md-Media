@@ -1,5 +1,7 @@
 {          
-    "external": [ ],
+    "external": [
+        {  "name": "getall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js"   }
+     ],
     "result": [
         {  "name": "live","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js"   }, 
         {  "name": "intro","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/intro.js"   }, 
