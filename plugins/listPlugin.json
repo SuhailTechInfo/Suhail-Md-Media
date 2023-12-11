@@ -1,6 +1,7 @@
 {          
     "external": [
-        {  "name": "getall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js"   }
+        {  "name": "getall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js"   },
+        {  "name": "fakereply","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/fakereply.js"   }
      ],
     "result": [
         {  "name": "live","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js"   }, 
