@@ -168,20 +168,26 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ha
 
 ---
 
+---
+
 <h4 align="center"> GetAll </h1>
-Get jid of group members
+
+Get all jids
 ```
 https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js
 ```
-- Getall member, gc pm users jid list
+- Get all member,all groups and all pm user jids
 ---
+
 
 
 ---
 
 <h4 align="center"> Editor-Pack </h1>
+
  Media Editor
 ```
 https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xmedia.js
 ```
 -  40+ features to edit media messages, image,audio and video editor
+---
