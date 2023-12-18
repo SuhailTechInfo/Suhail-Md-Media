@@ -1,1 +1,187 @@
 # Suhail-Md-Media
+
+
+
+
+<h1 align="center"> Suhail Md Plugins </h1>
+<div align="center">
+<br /> 
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Suhail-plugin-list" /> </p>
+
+
+ᴄʟɪᴄᴋ ᴡᴀ ʟᴏɢᴏ ᴛᴏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 👇 
+<br> [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643)
+  <div align="center"  >
+<h4 align="center">Plugins</h1>
+
+---
+
+- Create your own plugins and join group to add that plugin in repo.
+
+
+
+
+
+---
+<h4 align="center"> Live </h1>
+
+Live time
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js
+```
+- ᴜsᴀɢᴇ ᴏғ ᴛʜɪs ᴘʟᴜɢɪɴ : You can know which time is Now
+---
+
+<h4 align="center">  Teddy  </h1>
+
+SEnds  Animated Teddy 
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/teddy.js
+```
+---
+
+<h4 align="center">  Intro</h1>
+
+Sends Your Intro
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/intro.js
+```
+- Editable Plugin : fork it, and fill your information!
+---
+
+<h4 align="center">  Notes </h1>
+
+save , read and delete notes
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js
+```
+- ᴜsᴀɢᴇ ᴏғ ᴛʜɪs ᴘʟᴜɢɪɴ : Save notes in server side
+---
+
+<h4 align="center">  AReact </h1>
+
+Auto React Messages
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/areact.js
+```
+- Auto React Messages/Cmds/Alls
+---
+
+<h4 align="center">  AntiCall </h1>
+
+Decline Call From Spammers
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js
+```
+- Auto Decline calls, from selected numbers, Or also Decline Call from All
+---
+
+<h4 align="center">  SSaver </h1>
+
+Status Saver.
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ssaver.js
+```
+- Save Someones Whatsapp Story,
+
+---
+
+<h4 align="center">  LevelUp </h1>
+
+Rank, Profile , Leaderboard, LevelUp
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/rank.js
+```
+- Mongodb Require To Access these cmds
+---
+
+<h4 align="center">  AntiViewOnve </h1>
+
+Auto Download ViewOnce Messages.
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/antivv.js
+```
+
+---
+
+<h4 align="center">  AntiDelete </h1>
+
+DETECT AND SENDS DELETED MESSAGES IN CHAT
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delete.js
+```
+
+---
+
+<h4 align="center">  Audio Editor </h1>
+
+
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/audio.js
+```
+- change audio in different varity
+---
+
+<h4 align="center"> TextPro Logo </h1>
+
+Textpro logo list
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/logo.js
+```
+- Text to Image Logo creator
+---
+
+<h4 align="center"> cat </h1>
+
+Randome Cat
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/cat.js
+```
+- Send Randome Cat Images In Chat
+
+---
+
+<h4 align="center"> Dog </h1>
+
+Randome Dog Videos
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/dog.js
+```
+- Sends Randome Dog Video Or Image
+---
+
+<h4 align="center"> FakeReply </h1>
+
+Send Fake Reply by Given number and message Type
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/fakereply.js
+```
+
+---
+
+<h4 align="center"> Hack </h1>
+
+Hacking Prank
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/hack.js
+```
+
+---
+
+<h4 align="center"> GetAll </h1>
+Get jid of group members
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js
+```
+- Getall member, gc pm users jid list
+---
+
+
+---
+
+<h4 align="center"> Editor-Pack </h1>
+ Media Editor
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xmedia.js
+```
+-  40+ features to edit media messages, image,audio and video editor

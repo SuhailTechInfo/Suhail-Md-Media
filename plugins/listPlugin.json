@@ -1,10 +1,12 @@
 {          
     "external": [
         {  "name": "getall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js"   },
+        {  "name": "hack", "url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/hack.js"   }, 
         {  "name": "fakereply","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/fakereply.js"   }
      ],
     "result": [
         {  "name": "live","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js"   }, 
+        {  "name": "teddy","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/teddy.js"   },         
         {  "name": "intro","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/intro.js"   }, 
         {  "name": "notes","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js"   },   
         {  "name": "areact","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/areact.js"   },  
