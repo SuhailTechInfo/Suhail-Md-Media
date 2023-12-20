@@ -191,3 +191,14 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xm
 ```
 -  40+ features to edit media messages, image,audio and video editor
 ---
+
+---
+
+<h4 align="center"> DelSpam </h1>
+
+ Delete Multitple messages 
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delspam.js
+```
+-  Delete messages of a user from Group!
+---

@@ -21,7 +21,7 @@ CURRENTLY RUNNING ON BETA VERSION!!
 *
    * @project_name : Suhail-Md
    * @author : Suhail Tech Info
-   * @youtube : https://www.youtube.com/c/@SuhailTechInfo0
+   * @youtube : https://www.youtube.com/c/@SuhailTechInfo
    * @infoription : Suhail-Md ,A Multi-functional whatsapp user bot.
    * @version 1.2.2 
 *
