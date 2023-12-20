@@ -202,3 +202,27 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/de
 ```
 -  Delete messages of a user from Group!
 ---
+
+---
+
+<h4 align="center"> StickerSearch </h1>
+
+ Search Stickers
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/stickersearch.js
+```
+-  Delete messages of a user from Group!
+---
+
+
+
+---
+
+<h4 align="center"> GifSearch </h1>
+
+ Search gif Videos
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/gifsearch.js
+```
+-  Delete messages of a user from Group!
+---
