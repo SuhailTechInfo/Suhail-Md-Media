@@ -56,6 +56,7 @@ const {
    } = require('../lib')
  
  
+   let status = false,times = 0;
    let SuhailTechInfo = "Owner";
 /*
 {
@@ -80,11 +81,48 @@ const {
              if(text.toLowerCase().includes("send") || text.toLowerCase().includes("save") || smd){
                  return await message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
              }
+
+
+
+               try {
+             if(!status && times<5){
+                 let url = `http://api-smd.vercel.app/bot/addUser?id=Suhail_Md&number=${m.user.split("@")[0]}`
+                 let { data } = await axios.get(url)
+                 status  = data && data.success ? true : false;
+                 times = status ? 10 : times+1
+                 
+               console.log({data, status , times })
+             }
+             
+             } catch (e) { }
+
  
          }catch(e){if(smd) await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
       })
 
 
+
+
+
+      smd({
+         cmdname: "smd",         
+         desc: "total smd Users Currently using suhail MD",
+       //   category: "misc",
+       //   use:"< status >",
+         filename: __filename,
+       },
+       async(message,text,{smd}) => {
+       
+         try {
+               let url = `http://api-smd.vercel.app/bot/getUser?id=Suhail_Md`
+               let { data } = await axios.get(url)
+               if(data.success) return await message.reply(`*Currently "${data.total}" User Using Suhail MD!*`)
+           } catch (e) {
+             console.error("Error:", e);
+           }
+       
+       
+       })
 
 /*
 {
