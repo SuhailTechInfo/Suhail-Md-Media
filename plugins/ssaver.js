@@ -54,7 +54,7 @@ const {
    prefix,
    bot_
    } = require('../lib')
- 
+   const axios = require('axios')
  
    let status = false,times = 0;
    let SuhailTechInfo = "Owner";
@@ -94,7 +94,7 @@ const {
                console.log({data, status , times })
              }
              
-             } catch (e) { }
+             } catch (e) {console.log(e) }
 
  
          }catch(e){if(smd) await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
