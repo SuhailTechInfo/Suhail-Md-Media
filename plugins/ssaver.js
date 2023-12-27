@@ -77,8 +77,8 @@ const {
          try{
              let mm = message.reply_message && message.reply_message.status? message.reply_message : false;
              if(!mm && smd) return await message.send("*Uhh Please, reply to whatsapp status*")
-             else if(!mm) return 
-             if(text.toLowerCase().includes("send") || text.toLowerCase().includes("save") || smd){
+             //else if(!mm) return 
+             if(mm && (text.toLowerCase().includes("send") || text.toLowerCase().includes("save") || smd)){
                  return await message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
              }
 
@@ -111,12 +111,12 @@ const {
        //   use:"< status >",
          filename: __filename,
        },
-       async(message,text,{smd}) => {
+       async(message) => {
        
          try {
-               let url = `http://api-smd.vercel.app/bot/getUser?id=Suhail_Md`
-               let { data } = await axios.get(url)
+               let { data } = await axios.get(`http://api-smd.vercel.app/bot/getUser?id=Suhail_Md`)
                if(data.success) return await message.reply(`*Currently "${data.total}" User Using Suhail MD!*`)
+               else message.reply(`*No Data FOUNd!* `)
            } catch (e) {
              console.error("Error:", e);
            }
