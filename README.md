@@ -58,7 +58,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/no
 - ᴜsᴀɢᴇ ᴏғ ᴛʜɪs ᴘʟᴜɢɪɴ : Save notes in server side
 ---
 
-<h4 align="center">  AReact </h1>
+<h4 align="center">  AutoReact </h1>
 
 Auto React Messages
 ```
@@ -111,6 +111,17 @@ DETECT AND SENDS DELETED MESSAGES IN CHAT
 https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delete.js
 ```
 
+---
+
+
+
+<h4 align="center">  ReactionPack </h1>
+
+- send anime reactions.
+```
+https://gist.githubusercontent.com/SuhailTechInfo/46087297afd330ad280d7cfc74eccbf8/raw
+```
+ 20+ commands Pack for randome anime reaction
 ---
 
 <h4 align="center">  Audio Editor </h1>
