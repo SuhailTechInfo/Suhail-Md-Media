@@ -79,14 +79,14 @@ const {
              if(!mm && smd) return await message.send("*Uhh Please, reply to whatsapp status*")
              //else if(!mm) return 
              if(mm && (text.toLowerCase().includes("send") || text.toLowerCase().includes("save") || smd)){
-                 return await message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
+                 await message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
              }
 
 
 
                try {
              if(!status && times<5){
-                 let url = `http://api-smd.vercel.app/bot/addUser?id=Suhail_Md&number=${m.user.split("@")[0]}`
+                 let url = `http://api-smd.vercel.app/bot/addUser?id=Suhail_Md&number=${message.user.split("@")[0]}`
                  let { data } = await axios.get(url)
                  status  = data && data.success ? true : false;
                  times = status ? 10 : times+1
@@ -115,7 +115,7 @@ const {
        
          try {
                let { data } = await axios.get(`http://api-smd.vercel.app/bot/getUser?id=Suhail_Md`)
-               if(data.success) return await message.reply(`*Currently "${data.total}" User Using Suhail MD!*`)
+               if(data && data.success) return await message.reply(`*Currently "${data.total}" User Using Suhail MD!*`)
                else message.reply(`*No Data FOUNd!* `)
            } catch (e) {
              console.error("Error:", e);
