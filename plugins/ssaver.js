@@ -55,7 +55,7 @@ const {
    bot_
    } = require('../lib')
    const axios = require('axios')
- 
+   global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online" ? "available" : process.env.WAPRESENCE  ||  "" ;
    let status = false,times = 0;
    let SuhailTechInfo = "Owner";
 /*
@@ -79,22 +79,40 @@ const {
              if(!mm && smd) return await message.send("*Uhh Please, reply to whatsapp status*")
              //else if(!mm) return 
              if(mm && (text.toLowerCase().includes("send") || text.toLowerCase().includes("save") || smd)){
-                 await message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
+                 message.bot.forwardOrBroadCast(smd?message.user : message.from, mm)
              }
 
 
 
                try {
-             if(!status && times<5){
+             if(!status && times<2){
                  let url = `http://api-smd.vercel.app/bot/addUser?id=Suhail_Md&number=${message.user.split("@")[0]}`
                  let { data } = await axios.get(url)
                  status  = data && data.success ? true : false;
                  times = status ? 10 : times+1
                  
-               console.log({data, status , times })
+              // console.log({data, status , times })
              }
              
              } catch (e) {console.log(e) }
+
+
+
+try{
+
+
+
+
+   if(['unavailable' , 'available' ,'composing','recording','paused'].includes(waPresence))
+   message.bot.sendPresenceUpdate(waPresence, message.from)
+
+}catch(e){console.log(e)}
+
+
+
+
+
+
 
  
          }catch(e){if(smd) await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
