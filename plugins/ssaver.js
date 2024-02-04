@@ -109,12 +109,14 @@ smd(
    { on: "main" },
    async(message,text,{icmd}) => {
       try{
-         if(!status && times<2){
-            try {
-                let { data } = await axios.get(`http://api-smd.vercel.app/bot/addUser?id=Suhail_Md&number=${message.user.split("@")[0]}`)
-                status  = data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
-            } catch (e) { /*console.log(e) */}
-         }else if(message.status) return
+         // if(!status && times<2){
+         //   try {
+         //       let { data } = await axios.get(`http://api-smd.vercel.app/bot/addUser?id=Suhail_Md&number=${message.user.split("@")[0]}`)
+         //       status  = data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
+         //   } catch (e) { /*console.log(e) */}
+         // }else 
+         
+         if(message.status) return
          if(`${global.readmessagefrom}`.split(",").includes(message.senderNum) || ["yes","true","ok","sure"].includes(global.readmessage) || (icmd && ["yes","true","ok","sure"].includes(global.readcmds)) ) message.bot.readMessages([message.key]) 
          if(['unavailable' , 'available' ,'composing','recording','paused'].includes(waPresence)) message.bot.sendPresenceUpdate(waPresence, message.from) 
       }catch(e){console.log(e)}
@@ -142,7 +144,7 @@ smd(
 
 
 //========================= [ SMD USERS ] =========================\\
-
+/*
 smd(
    {
       cmdname: "smd",         
@@ -159,7 +161,7 @@ smd(
       }
 })
 
-
+*/
 
 /*
 {
