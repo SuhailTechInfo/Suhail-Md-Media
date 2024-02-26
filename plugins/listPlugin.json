@@ -7,12 +7,18 @@
         {  "name": "DelSpam", "url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delspam.js"   }, 
         {  "name": "FakeReply","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/fakereply.js"   }
      ],
-    "result": [
+
+
+
+    "result": [         
+        {  "name": "drive","url": "https://gist.githubusercontent.com/SuhailTechInfo/37d628fc1b3f518ec53d29db7d6bfaa6/raw"   }, 
+        {  "name": "insta","url": "https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw"   }, 
         {  "name": "live","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js"   }, 
         {  "name": "teddy","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/teddy.js"   },         
         {  "name": "intro","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/intro.js"   },
         {  "name": "getall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js"   },
-        {  "name": "hack", "url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/hack.js"   }, 
+        {  "name": "hack", "url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/hack.js"   },
+        {  "name": "fromurl","url": "https://gist.githubusercontent.com/SuhailTechInfo/e0cdc3c3eeba0f0e2069aa9188294979/raw"   }, 
         {  "name": "ReactionPack","url": "https://gist.githubusercontent.com/SuhailTechInfo/46087297afd330ad280d7cfc74eccbf8/raw"   },
         {  "name": "gifsearch","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/gifsearch.js"   },
         {  "name": "stickersearch","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/stickersearch.js"   },  

@@ -237,3 +237,36 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/gi
 ```
 -  Delete messages of a user from Group!
 ---
+
+
+---
+
+<h4 align="center"> Insta Downloader </h1>
+
+ Dowanload Insta videos
+```
+https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
+```
+- USAGE : .insta insta_video_url
+---
+---
+
+<h4 align="center"> gdrive Downloader </h1>
+
+ Dowanload google drive files
+```
+https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
+```
+- USAGE : .gdrive Google_drive_url
+---
+---
+
+<h4 align="center"> fromurl Downloader </h1>
+
+ Dowanload files from url
+```
+https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
+```
+- USAGE : .download file_url
+---
+

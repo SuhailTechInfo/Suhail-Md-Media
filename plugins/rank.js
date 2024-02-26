@@ -52,7 +52,17 @@ const {
 	bot_
 	} = require('../lib')
 const Levels = require("discord-xp");
-try{ if(isMongodb)(Levels.setURL(mongodb)) }catch{}
+var isLvl ;
+async function levelss (){
+    try{ 
+       if(isMongodb)(
+		isLvl = await Levels.setURL(mongodb || "mongodb://uwrr2obvrb4kbwnrvimy:rbgieh8nfk7EylXCh2D@byg4ii8uzy5rro8bcdfu-mongodb.services.clever-cloud.com:2008/byg4ii8uzy5rro8bcdfu")
+        )
+    }catch(e){}
+} 
+levelss()
+
+
 //============================================================================
 let utd = false;
 
@@ -144,23 +154,24 @@ smd({
 	else if (lvpoints <= 55) { var role = "🐉Immortal"; }
 	
             let ttms = userq.xp / 8;
-	var pfp; try { pfp = await message.bot.profilePictureUrl(meh, "image"); }catch{  pfp = await botpic();   }
+	var pfp=await message.getpp(meh)
   var naam_ser;try{ naam_ser = await message.bot.getName(meh) } catch{}
             
 const profile = `
-*Hii ${naam_ser},*
-*Here is your profile information*
+*Hii ${m.senderName},*
+
+*Here is profile information*
 *👤Username:* ${naam_ser}
 *⚡Bio:* ${bioo}
 *🧩Role:* ${role}
-*🍁Level:* ${userq.level}
-*📥Total Messages* ${ttms}
+*🍁Level:* ${userq.level ||"infinity"}
+*📥Total Messages* ${ttms||"infinity"}
 *Powered by ${tlang().title}*
 `;
             
 
             message.bot.sendMessage(message.chat, { image: { url: pfp },caption: profile }, { quoted: message });
-          }catch(e){ await message.error(`${e}\n\ncommand: tagall`,e,`*Can't fetch data,please check mongodb!!*`) }
+          }catch(e){ await message.error(`${e}\n\ncommand: profile`,e,`*ERR Can't fetch data!*`) }
         }
     )
 
@@ -211,20 +222,21 @@ smd({
 
           
           let disc = meh.substring(3, 7);
-          var ppuser; try {ppuser = await message.bot.profilePictureUrl(meh, "image");} catch { ppuser = THUMB_IMAGE;}
+          var ppuser = await message.getpp(meh)
           var naam_ser;try{ naam_ser = await message.bot.getName(meh) } catch{}
           let ttms = userq.xp / 8;
           
 var textr = `*Hii ${tlang().greet} ,🌟 ${naam_ser ||"Sir_"}∆${disc}'s* Exp
-\n\n*🌟Role*: ${role}\n*🟢Exp*: ${userq.xp} / ${Levels.xpFor( userq.level + 1)}
-*🏡Level*: ${userq.level}
-*Total Messages:*- ${ttms}
+\n\n*🌟Role*: ${role}
+*🟢Exp*: ${userq.xp||"infinity"} / ${Levels.xpFor( (userq.level || 0 ) + 1)}
+*🏡Level*: ${userq.level ||"infinity"}
+*Total Messages:*- ${ttms || "infinity"}
 `;
 
           
           
           await  message.bot.sendMessage(message.chat, { image: {url :ppuser }, caption: textr, }, { quoted: message });
-          }catch(e){ await message.error(`${e}\n\ncommand: leaderboard`,e,`*Can't fetch data, make sure MONGODB_URI added!!*`) }
+          }catch(e){ await message.error(`${e}\n\ncommand: rank`,e,`*ERR: Can't fetch data!*`) }
         }
     )
 //============================================================================
@@ -341,7 +353,7 @@ leadtext += `*${i + 1}●Name*: ${naam_ser}
 ║ *leveled Up huh⭐*
 ║ *👤Name*: ${message.pushName}
 ║ *🎐Level*: ${sck1.level}🍭
-║ *🛑Exp*: ${sck1.xp} / ${Levels.xpFor(sck1.level + 1)}
+║ *🛑Exp*: ${sck1.xp} / ${Levels.xpFor((sck1.level || 0 ) + 1)}
 ║ *📍Role*: *${role}*
 ║ *Enjoy🥳*
 ╚════════════╝ `}, { quoted: message });

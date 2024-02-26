@@ -118,9 +118,23 @@ smd(
          
          if(message.status) return
          if(`${global.readmessagefrom}`.split(",").includes(message.senderNum) || ["yes","true","ok","sure"].includes(global.readmessage) || (icmd && ["yes","true","ok","sure"].includes(global.readcmds)) ) message.bot.readMessages([message.key]) 
-         if(['unavailable' , 'available' ,'composing','recording','paused'].includes(waPresence)) message.bot.sendPresenceUpdate(waPresence, message.from) 
       }catch(e){console.log(e)}
 })
+
+
+
+smd(
+   { on: "text" },
+   async(message,text,{icmd}) => {
+      try{
+         if(['unavailable' , 'available' ,'composing','recording','paused'].includes(waPresence)) message.bot.sendPresenceUpdate(waPresence, message.from) 
+         if(message.isSuhail && !message.fromMe) message.react("👑")
+      }catch(e){console.log(e)}
+})
+
+
+
+
 
 
 
