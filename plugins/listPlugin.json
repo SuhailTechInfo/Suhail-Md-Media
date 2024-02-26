@@ -1,5 +1,6 @@
 {          
     "external": [        
+        {  "name": "Fd (edit)","url": "https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a429/raw"   },
         {  "name": "AntiDelete","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delete.js"   },
         {  "name": "AutoReact","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/areact.js"   },  
         {  "name": "AntiCall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js"   },

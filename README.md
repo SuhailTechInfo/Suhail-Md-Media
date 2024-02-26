@@ -39,7 +39,17 @@ SEnds  Animated Teddy
 https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/teddy.js
 ```
 ---
+---
 
+<h4 align="center">  Fd (EditAble)</h1>
+
+Forward Message with editable Preview
+```
+https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a429/raw
+```
+- Editable Plugin : fork it, and fill your information!
+---
+---
 <h4 align="center">  Intro</h1>
 
 Sends Your Intro
