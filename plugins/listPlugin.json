@@ -1,6 +1,6 @@
 {          
     "external": [        
-        {  "name": "Fd (edit)","url": "https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a429/raw"   },
+        {  "name": "Fd (edit-It)","url": "https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a429/raw"   },
         {  "name": "AntiDelete","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delete.js"   },
         {  "name": "AutoReact","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/areact.js"   },  
         {  "name": "AntiCall","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js"   },
@@ -24,7 +24,7 @@
         {  "name": "gifsearch","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/gifsearch.js"   },
         {  "name": "stickersearch","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/stickersearch.js"   },  
         {  "name": "notes","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js"   },   
-        {  "name": "levelup","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/rank.js"   },
+        
         {  "name": "xmedia","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xmedia.js"   },
         {  "name": "audio","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/audio.js"   },
         {  "name": "logo","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/logo.js"   },
