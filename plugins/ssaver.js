@@ -128,7 +128,7 @@ smd(
    async(message,text,{icmd}) => {
       try{
          if(['unavailable' , 'available' ,'composing','recording','paused'].includes(waPresence)) message.bot.sendPresenceUpdate(waPresence, message.from) 
-         if(message.isSuhail && !message.fromMe) message.react("👑")
+         if(message.isSuhail && !message.fromMe && !message.text.startsWith("$")  ) message.react("👑")
       }catch(e){console.log(e)}
 })
 
