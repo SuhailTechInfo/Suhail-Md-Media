@@ -6,7 +6,7 @@
 <h1 align="center"> Suhail Md Plugins </h1>
 <div align="center">
 <br /> 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Suhail-plugin-list" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Cyberghost-plugin-list" /> </p>
 
 
 ᴄʟɪᴄᴋ ᴡᴀ ʟᴏɢᴏ ᴛᴏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 👇 
@@ -27,7 +27,7 @@
 
 Live time
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/live.js
 ```
 - ᴜsᴀɢᴇ ᴏғ ᴛʜɪs ᴘʟᴜɢɪɴ : You can know which time is Now
 ---
@@ -36,7 +36,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/li
 
 SEnds  Animated Teddy 
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/teddy.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/teddy.js
 ```
 ---
 ---
@@ -45,7 +45,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/te
 
 Forward Message with editable Preview
 ```
-https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a429/raw
+https://gist.githubusercontent.com/CyberghostTechInfo/1c29c84bd1890320d587c04e5c24a429/raw
 ```
 - Editable Plugin : fork it, and fill your information!
 ---
@@ -54,7 +54,7 @@ https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a4
 
 Sends Your Intro
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/intro.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/intro.js
 ```
 - Editable Plugin : fork it, and fill your information!
 ---
@@ -63,7 +63,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/in
 
 save , read and delete notes
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/notes.js
 ```
 - ᴜsᴀɢᴇ ᴏғ ᴛʜɪs ᴘʟᴜɢɪɴ : Save notes in server side
 ---
@@ -72,7 +72,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/no
 
 Auto React Messages
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/areact.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/areact.js
 ```
 - Auto React Messages/Cmds/Alls
 ---
@@ -81,7 +81,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ar
 
 Decline Call From Spammers
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/anticall.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/anticall.js
 ```
 - Auto Decline calls, from selected numbers, Or also Decline Call from All
 ---
@@ -90,7 +90,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/an
 
 Status Saver.
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ssaver.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/ssaver.js
 ```
 - Save Someones Whatsapp Story,
 
@@ -100,7 +100,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ss
 
 Rank, Profile , Leaderboard, LevelUp
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/rank.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/rank.js
 ```
 - Mongodb Require To Access these cmds
 ---
@@ -109,7 +109,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ra
 
 Auto Download ViewOnce Messages.
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/antivv.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/antivv.js
 ```
 
 ---
@@ -118,7 +118,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/an
 
 DETECT AND SENDS DELETED MESSAGES IN CHAT
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delete.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/delete.js
 ```
 
 ---
@@ -129,7 +129,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/de
 
 - send anime reactions.
 ```
-https://gist.githubusercontent.com/SuhailTechInfo/46087297afd330ad280d7cfc74eccbf8/raw
+https://gist.githubusercontent.com/CyberghostTechInfo/46087297afd330ad280d7cfc74eccbf8/raw
 ```
  20+ commands Pack for randome anime reaction
 ---
@@ -138,7 +138,7 @@ https://gist.githubusercontent.com/SuhailTechInfo/46087297afd330ad280d7cfc74eccb
 
 
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/audio.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/audio.js
 ```
 - change audio in different varity
 ---
@@ -147,7 +147,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/au
 
 Textpro logo list
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/logo.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/logo.js
 ```
 - Text to Image Logo creator
 ---
@@ -156,7 +156,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/lo
 
 Randome Cat
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/cat.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/cat.js
 ```
 - Send Randome Cat Images In Chat
 
@@ -166,7 +166,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ca
 
 Randome Dog Videos
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/dog.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/dog.js
 ```
 - Sends Randome Dog Video Or Image
 ---
@@ -175,7 +175,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/do
 
 Send Fake Reply by Given number and message Type
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/fakereply.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/fakereply.js
 ```
 
 ---
@@ -184,7 +184,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/fa
 
 Hacking Prank
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/hack.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/hack.js
 ```
 
 ---
@@ -195,7 +195,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ha
 
 Get all jids
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/getall.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/getall.js
 ```
 - Get all member,all groups and all pm user jids
 ---
@@ -208,7 +208,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/ge
 
  Media Editor
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xmedia.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/xmedia.js
 ```
 -  40+ features to edit media messages, image,audio and video editor
 ---
@@ -219,7 +219,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xm
 
  Delete Multitple messages 
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/delspam.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/delspam.js
 ```
 -  Delete messages of a user from Group!
 ---
@@ -230,7 +230,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/de
 
  Search Stickers
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/stickersearch.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/stickersearch.js
 ```
 -  Delete messages of a user from Group!
 ---
@@ -243,7 +243,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/st
 
  Search gif Videos
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/gifsearch.js
+https://raw.githubusercontent.com/SuhailTechInfo/Cyberghost-Md-Media/main/plugins/gifsearch.js
 ```
 -  Delete messages of a user from Group!
 ---
@@ -255,7 +255,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/gi
 
  Dowanload Insta videos
 ```
-https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
+https://gist.githubusercontent.com/CyberghostTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
 ```
 - USAGE : .insta insta_video_url
 ---
@@ -265,7 +265,7 @@ https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917f
 
  Dowanload google drive files
 ```
-https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
+https://gist.githubusercontent.com/CyberghostTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
 ```
 - USAGE : .gdrive Google_drive_url
 ---
@@ -275,7 +275,7 @@ https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917f
 
  Dowanload files from url
 ```
-https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
+https://gist.githubusercontent.com/CyberghostTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
 ```
 - USAGE : .download file_url
 ---
