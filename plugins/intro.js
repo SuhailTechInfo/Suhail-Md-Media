@@ -46,20 +46,19 @@ const { smd, Config,smdBuffer,  prefix } = require('../lib')
 
 
 var surl = 'https://github.com/SuhailTechInfo/Secktor-bot' // Source URL
-const number = '923184474176'
-var name = ' Suhail Tech'
+const number = '8509320573'
+var name = ' S-U-D-I-P-T-A'
 var body = '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯'
-var image = 'https://telegra.ph/file/1e60489705c851f74b55e.jpg'
+var image = 'https://telegra.ph/file/cf8e2b89ca5ba69f87025.jpg'
 let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄
 │       「 𝗠𝗬 𝗜𝗡𝗧𝗥𝗢 」
-│ Name      : sυнαɪʟ ᴛᴇᴄʜ ɪиғօ
-│ Place       : ʟαнᴏʀᴇ ᴘᴋ
-│ Gender    :  ᴍᴀʟᴇ
-│ Age          : 22_
-│ Phone     : wa.me/923184474176
-│ Youtube   : Youtube.com/c/SuhailTechInfo
-│ Status     : ɢᴀᴍᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ
-╰═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄`
+│ Name      : S-U-D-I-P-T-A 
+│ Place       : K-O-L-K-A-T-A
+│ Gender    :  M-A-L-E
+│ Age          : 21+_
+│ Phone     : wa.me/918509320573
+│ whatsapp  : 
+│ Status    : I AM AUTO STATUS VIEWER
 
 
 
