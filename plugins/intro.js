@@ -46,19 +46,19 @@ const { smd, Config,smdBuffer,  prefix } = require('../lib')
 
 
 var surl = 'https://github.com/SuhailTechInfo/Secktor-bot' // Source URL
-const number = '923184474176'
+const number = '2347038308662'
 var name = ' Suhail Tech'
 var body = '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯'
 var image = 'https://telegra.ph/file/1e60489705c851f74b55e.jpg'
 let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄
 │       「 𝗠𝗬 𝗜𝗡𝗧𝗥𝗢 」
-│ Name      : sυнαɪʟ ᴛᴇᴄʜ ɪиғօ
-│ Place       : ʟαнᴏʀᴇ ᴘᴋ
+│ Name      : ❚█══ 𓊈𒆜𓃵♐️𝐋𝚰𝐋 𝚸𝚪𝚵𝐒𝚮𓃵𒆜𓊉 🦅══█❚ 
+│ Place       : NIGERIA Ogun
 │ Gender    :  ᴍᴀʟᴇ
-│ Age          : 22_
-│ Phone     : wa.me/923184474176
+│ Age          : 19_
+│ Phone     : wa.me/2347038308662
 │ Youtube   : Youtube.com/c/SuhailTechInfo
-│ Status     : ɢᴀᴍᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ
+│ Status     :Ethical Hacking /ᴅᴇᴠᴇʟᴏᴘᴇʀ
 ╰═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄`
 
 
