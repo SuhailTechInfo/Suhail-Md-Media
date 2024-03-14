@@ -3,14 +3,15 @@
 
 
 
+
 <h1 align="center"> Suhail Md Plugins </h1>
 <div align="center">
 <br /> 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Suhail-plugin-list" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Suhail-plugin-list" /></p>
 
 
 ᴄʟɪᴄᴋ ᴡᴀ ʟᴏɢᴏ ᴛᴏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 👇 
-<br> [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643)
+<br> [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/IVBBsUOuXj39rObtWnOis2)
   <div align="center"  >
 <h4 align="center">Plugins</h1>
 
