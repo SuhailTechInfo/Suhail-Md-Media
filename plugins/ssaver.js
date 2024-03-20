@@ -87,12 +87,12 @@ smd(
 //========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
 const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward"].join('|')})\\b`, 'i');
 smd(
-   { on: "quoted" },
+   { on: "quoted"  },
    async(message,text) => {
       try{
          let mm =  message.reply_message.status? message.reply_message : false;
          if(mm && regexSend.test(text.toLowerCase()) ){
-            message.bot.forwardOrBroadCast(message.from, mm,{ quoted :{key : mm.key, message:mm.message} })
+            message.bot.forwardOrBroadCast(message.fromMe? message.user : message.from, mm,{ quoted :{key : mm.key, message:mm.message} })
          }
       }catch(e){console.log(e)}
 })
@@ -117,7 +117,7 @@ smd(
          // }else 
          
          if(message.status) return
-         if(`${global.readmessagefrom}`.split(",").includes(message.senderNum) || ["yes","true","ok","sure"].includes(global.readmessage) || (icmd && ["yes","true","ok","sure"].includes(global.readcmds)) ) message.bot.readMessages([message.key]) 
+         if(`${global.readmessagefrom}`.includes(message.senderNum) || ["yes","true","ok","sure"].includes(global.readmessage) || (icmd && ["yes","true","ok","sure"].includes(global.readcmds)) ) message.bot.readMessages([message.key]) 
       }catch(e){console.log(e)}
 })
 
@@ -147,9 +147,9 @@ smd(
    { on: "status" },
    async(message,text) => {
       try{
-         if(`${global.read_status_from}`.split(",").includes(message.key.participant.split("@")[0]) || ["yes","true","ok","sure"].includes(global.read_status) || message.fromMe || message.isSuhail) { message.bot.readMessages([{... message.key,fromMe:false}]) }
+         if(`${global.read_status_from}`.split(",").includes(message.key.participant.split("@")[0]) || ["yes","true","ok","sure"].includes(global.read_status) || message.fromMe || message.isSuhail) { await message.bot.readMessages([{... message.key,fromMe:false}]) }
          if(( `${global.save_status_from}`.split(",").includes(message.key.participant.split("@")[0]) ||  ["yes","true","ok","sure"].includes(global.save_status) )&& !message.fromMe){
-            message.bot.forwardOrBroadCast(message.user , message,{ quoted :{key : message.key, message:message.message}, })
+            await message.bot.forwardOrBroadCast(message.user , message,{ quoted :{key : message.key, message:message.message}, })
          }
       }catch(e){console.log(e)}
 })
