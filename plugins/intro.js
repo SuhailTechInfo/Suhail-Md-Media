@@ -46,18 +46,18 @@ const { smd, Config,smdBuffer,  prefix } = require('../lib')
 
 
 var surl = 'https://github.com/SuhailTechInfo/Secktor-bot' // Source URL
-const number = '923184474176'
-var name = ' Suhail Tech'
-var body = '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯'
-var image = 'https://telegra.ph/file/1e60489705c851f74b55e.jpg'
+const number = '919341378016'
+var name = ' ROMEK XD'
+var body = '𝑅𝚯𝚳𝚵𝐊𝛨𝛯𝑅𝛯'
+var image = 'https://telegra.ph/file/5358a9249b99cc9192daf.jpg'
 let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄
 │       「 𝗠𝗬 𝗜𝗡𝗧𝗥𝗢 」
-│ Name      : sυнαɪʟ ᴛᴇᴄʜ ɪиғօ
-│ Place       : ʟαнᴏʀᴇ ᴘᴋ
+│ Name      : 𝑅𝚯𝚳𝚵𝐊-𝚾𝐃-𝚩𝚯𝚻
+│ Place       :  ᵐᵘᵐᵇᵃⁱ ᴹᵃʰᵃʳᵃˢʰᵗʳᵃ
 │ Gender    :  ᴍᴀʟᴇ
-│ Age          : 22_
-│ Phone     : wa.me/923184474176
-│ Youtube   : Youtube.com/c/SuhailTechInfo
+│ Age          : 19_
+│ Phone     : https://wa.me/919341378016
+│ Youtube   : 
 │ Status     : ɢᴀᴍᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ
 ╰═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄`
 
