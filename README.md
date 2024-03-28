@@ -152,6 +152,17 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/lo
 - Text to Image Logo creator
 ---
 
+
+<h4 align="center"> Pubg Logo </h1>
+
+create pubg logo
+```
+https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/pubg.js
+```
+- Generate Pubg Mobile logos
+---
+
+
 <h4 align="center"> cat </h1>
 
 Randome Cat
