@@ -69,15 +69,13 @@ let SuhailTechInfo = "Owner";
 }
  */
 
-smd(
-   {  pattern: "#",
+smd({  pattern: "#",
       alias : ["ssaver"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
       filename: __filename,
       use:"< status >",
-   },
-   async(message) => {
+   },async(message) => {
       try{
          let mm = message.reply_message && message.reply_message.status? message.reply_message : false;
          if(mm ){ message.bot.forwardOrBroadCast(message.user, mm, { quoted :{key : mm.key, message:mm.message} })  } 
@@ -103,6 +101,7 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false";
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false";
 global.readcmds = process.env.READ_COMMAND || global.readcmds || "true"
+global.YT_PROMOTE = "https://www.youtube.com/@FAXITECH" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
 
 let status = false,times = 0;
 smd(
