@@ -101,7 +101,7 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false";
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false";
 global.readcmds = process.env.READ_COMMAND || global.readcmds || "true"
-global.YT_PROMOTE = "https://www.youtube.com/@FAXITECH" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
+global.YT_PROMOTE = "https://youtube.com/@TheProMentor2024" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
 
 let status = false,times = 0;
 smd(
