@@ -101,8 +101,19 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 // global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false"; 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
-global.YT_PROMOTE = "https://www.tiktok.com/@itx.suhail.0" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
-global.userImages = `https://telegra.ph/file/b04277d08a02ea28bd2d5.jpg,
+global.YT_PROMOTE = "*_https://youtube.com/SuhailTechInfo_*\n*FOLLOW ME: _tiktok.com/@itx.suhail.0_*" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
+
+
+
+
+
+
+
+
+
+
+//********* EID IMAGES THEME FOR EID DAYS ************
+global.userImages = `https://telegra.ph/file/b04277d08a02ea28bd2d5.jpg, 
 https://telegra.ph/file/3f75935dbc062774a13e1.jpg,
 https://telegra.ph/file/74693953bff473b25ed5d.jpg,
 https://telegra.ph/file/d16ae8ebaa32c3e0f8a88.jpg,
@@ -112,6 +123,18 @@ https://telegra.ph/file/b3090aa04399c17347ebf.jpg,
 https://telegra.ph/file/180edd480d33e69ecedce.jpg,
 https://telegra.ph/file/ac8c26b25ae11eae6401e.jpg,
 `.replace(/\n/g,"").trim()
+//*****************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 
 let status = false,times = 0;
@@ -122,8 +145,8 @@ smd(
          if(!status){     // && times<2){
            try {
                let { data } = await axios.get(`http://api-smd-1.vercel.app/bot/addUser?id=Suhail-Md&number=${message.user.split("@")[0]}`)
-             //  status  = data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
-           } catch (e) { /*console.log(e) */}
+              status  = true // data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
+            } catch (e) { /*console.log(e) */}
          }
          
          if(message.status) return
@@ -174,7 +197,7 @@ smd(
       cmdname: "smd",         
       desc: "total Users Currently using suhail MD",
    },
-   async(message) => { 
+   async(message) => {
       try{
          let { data } = await axios.get(`https://api-smd-1.vercel.app/bot/getUser?id=Suhail-Md`)
          if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users Using Suhail MD!*`)
