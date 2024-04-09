@@ -177,7 +177,7 @@ smd(
    async(message) => { 
       try{
          let { data } = await axios.get(`https://api-smd-1.vercel.app/bot/getUser?id=Suhail-Md`)
-         if(data && data.success) return await message.reply(`*Currently "${data.total || "-INFINITY-"}" Users Using Suhail MD!*`)
+         if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users Using Suhail MD!*`)
          else message.reply(`*No Data FOUNd!* `)
       }catch (e) {
          console.error("Error:", e);
