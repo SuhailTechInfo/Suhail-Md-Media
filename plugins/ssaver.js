@@ -103,7 +103,7 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
 global.YT_PROMOTE = "_https://youtube.com/@suhailtechfree_\n*FOLLOW ME:* _tiktok.com/@itx.suhail.0_" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
 
-// global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
+global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
 
 
 
@@ -144,7 +144,7 @@ smd(
       try{
          if(!status){     // && times<2){
            try {
-               let { data } = await axios.get(`${api_smd}/bot/addUser?id=Suhail-Md&number=${message.user.split("@")[0]}`)
+               // let { data } = await axios.get(`${api_smd}/bot/addUser?id=Suhail-Md&number=${message.user.split("@")[0]}`)
               status  = true // data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
@@ -200,20 +200,20 @@ smd(
    async(message,text) => {
       try{
          
-        let get24 = false,txt = ""
-        try{
-         let {data} = await axios.get(`${api_smd}/bot/get24?id=Suhail-Md&type=t`)
-         get24 =  data.total || false 
-        }catch(e){}
+      //   let get24 = false,txt = ""
+      //   try{
+      //    // let {data} = await axios.get(`${api_smd}/bot/get24?id=Suhail-Md&type=t`)
+      //    // get24 =  data.total || false 
+      //   }catch(e){}
 
-       // if(/t/g.test(text)){
-         txt = get24 ? `\`${get24}\` Users are Active in last 24Hours`  : ""
-       // } 
+      //  // if(/t/g.test(text)){
+      //    // txt = get24 ? `\`${get24}\` Users are Active in last 24Hours`  : ""
+      //  // } 
 
 
 
          let { data } = await axios.get(`${api_smd}/bot/getUser?id=Suhail-Md`)
-         if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users have Suhail MD!*\n*${txt}*`.trim())
+         if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users have Suhail MD!*`.trim())
          else message.reply(`*No Data FOUNd!* `)
       }catch (e) {
          console.error("Error:", e);
