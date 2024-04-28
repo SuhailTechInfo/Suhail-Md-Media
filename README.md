@@ -39,6 +39,13 @@ SEnds  Animated Teddy
 https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/teddy.js
 ```
 ---
+<h4 align="center">  auto forward (EditAble)</h1>
+
+AUTO Forward Message
+```
+https://gist.githubusercontent.com/SuhailTechInfo/5691ba46fffcb311da7ea77f2db2cdc8/raw
+```
+- Editable Plugin : fork it, and fill your information!
 ---
 
 <h4 align="center">  Fd (EditAble)</h1>
