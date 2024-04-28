@@ -23,7 +23,8 @@
         {  "name": "ReactionPack","url": "https://gist.githubusercontent.com/SuhailTechInfo/46087297afd330ad280d7cfc74eccbf8/raw"   },
         {  "name": "gifsearch","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/gifsearch.js"   },
         {  "name": "stickersearch","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/stickersearch.js"   },  
-        {  "name": "notes","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js"   },   
+        {  "name": "notes","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/notes.js"   },
+         {  "name": "cricket","url": "https://gist.githubusercontent.com/SuhailTechInfo/8c0c6ea1321edc312aacdc416e3451c5/raw"   },
         
         {  "name": "xmedia","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/xmedia.js"   },
         {  "name": "audio","url": "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/audio.js"   },
