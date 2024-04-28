@@ -104,10 +104,11 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 // global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false"; 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
-global.YT_PROMOTE = "_https://youtube.com/SuhailTechInfo_\n*FOLLOW ME:* _tiktok.com/@itx.suhail.0_" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
+global.YT_PROMOTE = "_https://youtube.com/SuhailTechInfo_ \n*FOLLOW ME:* _tiktok.com/@itx.suhail.0_" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
 
 global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
-
+global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCCoaogdKsh0B";
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
 
 
 
