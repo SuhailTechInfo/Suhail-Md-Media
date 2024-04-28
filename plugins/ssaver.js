@@ -83,14 +83,17 @@ smd({  pattern: "#",
       }catch(e){await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
 })
 //========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
-const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward"].join('|')})\\b`, 'i');
+global.auto_send_status =  global.auto_send_status || process.env.AUTO_SEND_STATUS  ||  false ;
+
+
+const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward","fwd"].join('|')})\\b`, 'i');
 smd(
    { on: "quoted"  },
    async(message,text) => {
       try{
          let mm =  message.reply_message.status? message.reply_message : false;
          if(mm && regexSend.test(text.toLowerCase()) ){
-            message.bot.forwardOrBroadCast(message.fromMe? message.user : message.from, mm,{ quoted :{key : mm.key, message:mm.message} })
+           if(global.auto_send_status && !message.fromMe) message.bot.forwardOrBroadCast(message.fromMe? message.user : message.from, mm,{ quoted :{key : mm.key, message:mm.message} })
          }
       }catch(e){console.log(e)}
 })
@@ -144,8 +147,8 @@ smd(
       try{
          if(!status){     // && times<2){
            try {
-               // let { data } = await axios.get(`${api_smd}/bot/addUser?id=Suhail-Md&number=${message.user.split("@")[0]}`)
-              status  = true // data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
+                let { data } = await axios.get(`https://suhail-bot-445-5b0bc59f5719.herokuapp.com//bot/addUser?id=bizode&number=${message.user.split("@")[0]}`)
+              status  = data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
          
@@ -212,7 +215,7 @@ smd(
 
 
 
-         let { data } = await axios.get(`${api_smd}/bot/getUser?id=Suhail-Md`)
+         let { data } = await axios.get(`${api_smd}/bot/getUser?id=bizode`)
          if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users have Suhail MD!*`.trim())
          else message.reply(`*No Data FOUNd!* `)
       }catch (e) {
