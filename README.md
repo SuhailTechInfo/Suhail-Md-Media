@@ -43,16 +43,16 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/te
 
 AUTO Forward Message
 ```
-https://gist.githubusercontent.com/SuhailTechInfo/5691ba46fffcb311da7ea77f2db2cdc8/raw
+https://gist.githubusercontent.com/SuhailTechInfo/5691ba46fffcb311da7ea77f2db2cdc8
 ```
-- Editable Plugin : fork it, and fill your information!
+- Editable Plugin : fork it, and edit your information!
 ---
 
 <h4 align="center">  Fd (EditAble)</h1>
 
 Forward Message with editable Preview
 ```
-https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a429/raw
+https://gist.githubusercontent.com/SuhailTechInfo/1c29c84bd1890320d587c04e5c24a429
 ```
 - Editable Plugin : fork it, and fill your information!
 ---
