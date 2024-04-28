@@ -59,6 +59,15 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/in
 - Editable Plugin : fork it, and fill your information!
 ---
 
+<h4 align="center">  Cricket </h1>
+
+scores & cricket
+```
+https://gist.githubusercontent.com/SuhailTechInfo/8c0c6ea1321edc312aacdc416e3451c5/raw
+```
+- ᴜsᴀɢᴇ ᴏғ ᴛʜɪs ᴘʟᴜɢɪɴ : get live cricket match scores results
+---
+
 <h4 align="center">  Notes </h1>
 
 save , read and delete notes
