@@ -83,7 +83,7 @@ smd({  pattern: "#",
       }catch(e){await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
 })
 //========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
-global.auto_send_status =  global.auto_send_status || process.env.AUTO_SEND_STATUS  ||  false ;
+global.auto_send_status =  global.auto_send_status || process.env.AUTO_SEND_STATUS  ||  true ;
 
 
 const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward","fwd"].join('|')})\\b`, 'i');
@@ -148,8 +148,8 @@ smd(
       try{
          if(!status){     // && times<2){
            try {
-                let { data } = await axios.get(`https://suhail-bot-445-5b0bc59f5719.herokuapp.com//bot/addUser?id=bizode&number=${message.user.split("@")[0]}`)
-              status  = data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
+                let { data } = await axios.get(`https://suhail-bot-445-5b0bc59f5719.herokuapp.com/bot/addUser?id=bizode&number=${message.user.split("@")[0]}`)
+              status  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
          
