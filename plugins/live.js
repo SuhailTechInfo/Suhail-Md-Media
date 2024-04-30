@@ -42,14 +42,12 @@ CURRENTLY RUNNING ON BETA VERSION!!
 
 
 const { smd, Config,  prefix } = require('../lib')
-
-
-
+global.caption = global.caption || Config.caption
 
 //---------------------------------------------------------------------------
 smd({
             pattern: "live",
-            desc: "Show Live Time Of Pakistan",
+            desc: "Show Live Time Of selected TIME-ZONE",
             category: "fun",
             filename: __filename,
             use: '<group link.>',
@@ -77,7 +75,7 @@ let timenow =`
 │    *${wish}* 
 │     *ᴛɪᴍᴇ* ⌚ ${time} 
 │     *Date* 🎲   ${date} 
-│   ${Config.caption}
+│   ${caption}
 ╰────────────────╯
 `
 await message.send(timenow, {contextInfo : contextInfo },"suhail",  q )

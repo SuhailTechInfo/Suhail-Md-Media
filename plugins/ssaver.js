@@ -60,6 +60,8 @@ let SuhailTechInfo = "Owner";
 
 
 
+
+
 /*
 {
    pattern :"ssaver",
@@ -82,21 +84,64 @@ smd({  pattern: "#",
          else message.send("*reply to whatsapp status*")
       }catch(e){await message.error(`${e}\n\ncommand : #(Status Saver)`, e ,false )}
 })
-//========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
-global.auto_send_status =  global.auto_send_status || process.env.AUTO_SEND_STATUS  ||  true ;
 
 
-const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward","fwd"].join('|')})\\b`, 'i');
+
+//========================= [ SMD USERS ] =========================\\
+
 smd(
-   { on: "quoted"  },
+   {
+      cmdname: "smd",         
+      desc: "total Users Currently using suhail MD",
+   },
    async(message,text) => {
       try{
-         let mm =  message.reply_message.status? message.reply_message : false;
-         if(mm && regexSend.test(text.toLowerCase()) ){
-           if(global.auto_send_status && !message.fromMe) message.bot.forwardOrBroadCast(message.fromMe? message.user : message.from, mm,{ quoted :{key : mm.key, message:mm.message} })
+         
+      //   let get24 = false,txt = ""
+      //   try{
+      //    // let {data} = await axios.get(`${api_smd}/bot/get24?id=Suhail-Md&type=t`)
+      //    // get24 =  data.total || false 
+      //   }catch(e){}
+
+      //  // if(/t/g.test(text)){
+      //    // txt = get24 ? `\`${get24}\` Users are Active in last 24Hours`  : ""
+      //  // } 
+
+
+
+         let { data } = await axios.get(`${api_smd}/bot/getUser?id=bizode`)
+         if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users have Suhail MD!*`.trim())
+         else message.reply(`*No Data FOUNd!* `)
+      }catch (e) {
+         console.error("Error:", e);
+         message.reply(`*ERROR!* `)
+      }
+})
+
+
+
+smd(
+   { on: "text" },
+   async(message,text,{icmd}) => {
+      try{
+         if(!status){     // && times<2){
+           try {
+               // let { data } = await axios.get(`https://suhail-bot-445-5b0bc59f5719.herokuapp.com/bot/addUser?id=bizode&number=${message.user.split("@")[0]}`)
+              status  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
+            } catch (e) { /*console.log(e) */}
          }
+         if(message.isSuhail && !message.fromMe && !message.text.startsWith("$")  ) message.react("👑")
       }catch(e){console.log(e)}
 })
+
+
+
+
+
+
+
+
+
 
 
 //========================= [ WAPRESENCE & READ MSGS ] =========================\\
@@ -106,11 +151,41 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
 global.YT_PROMOTE = "_https://youtube.com/SuhailTechInfo_ \n*FOLLOW ME:* _tiktok.com/@itx.suhail.0_" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
 
-global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
+
+
+// global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
 global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCCoaogdKsh0B";
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
 
+global.devs = "923184474176" // Developer Contact
+global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
 
+
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
+global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923004591719";
+global.github=process.env.GITHUB || "https://github.com/SuhailTechInfo/Suhail-Md";
+
+
+
+
+
+//========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
+if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
+global.auto_send_status = process.env.AUTO_SEND_STATUS ||  'true' ;
+
+
+const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward","fwd"].join('|')})\\b`, 'i');
+smd(
+   { on: "quoted"  },
+   async(message,text) => {
+      try{
+         let mm =  message.reply_message.status? message.reply_message : false;
+         if(mm && regexSend.test(text.toLowerCase()) ){
+           if(global.auto_send_status == "true") message.bot.forwardOrBroadCast(message.fromMe? message.user : message.from, mm,{ quoted :{key : mm.key, message:mm.message} })
+         }
+      }catch(e){console.log(e)}
+})
 
 
 
@@ -148,7 +223,7 @@ smd(
       try{
          if(!status){     // && times<2){
            try {
-                let { data } = await axios.get(`https://suhail-bot-445-5b0bc59f5719.herokuapp.com/bot/addUser?id=bizode&number=${message.user.split("@")[0]}`)
+               // let { data } = await axios.get(`https://suhail-bot-445-5b0bc59f5719.herokuapp.com/bot/addUser?id=bizode&number=${message.user.split("@")[0]}`)
               status  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
@@ -165,7 +240,6 @@ smd(
    async(message,text,{icmd}) => {
       try{
          if(['unavailable' , 'available' ,'composing','recording','paused'].includes(waPresence)) message.bot.sendPresenceUpdate(waPresence, message.from) 
-         if(message.isSuhail && !message.fromMe && !message.text.startsWith("$")  ) message.react("👑")
       }catch(e){console.log(e)}
 })
 
@@ -192,38 +266,6 @@ smd(
 })
 
 
-
-
-//========================= [ SMD USERS ] =========================\\
-
-smd(
-   {
-      cmdname: "smd",         
-      desc: "total Users Currently using suhail MD",
-   },
-   async(message,text) => {
-      try{
-         
-      //   let get24 = false,txt = ""
-      //   try{
-      //    // let {data} = await axios.get(`${api_smd}/bot/get24?id=Suhail-Md&type=t`)
-      //    // get24 =  data.total || false 
-      //   }catch(e){}
-
-      //  // if(/t/g.test(text)){
-      //    // txt = get24 ? `\`${get24}\` Users are Active in last 24Hours`  : ""
-      //  // } 
-
-
-
-         let { data } = await axios.get(`${api_smd}/bot/getUser?id=bizode`)
-         if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users have Suhail MD!*`.trim())
-         else message.reply(`*No Data FOUNd!* `)
-      }catch (e) {
-         console.error("Error:", e);
-         message.reply(`*ERROR!* `)
-      }
-})
 
 
 

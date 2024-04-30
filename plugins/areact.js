@@ -87,10 +87,14 @@ async( message, text) => {
 
  smd({ on: "main" }, async(msg,text,{icmd}) => {
     try{
-        if(!msg  || msg.reaction) return
+      if(!msg  || msg.reaction || msg.protocol || msg.pollUpdate ) return "Not Allowed"
         if(!bots || utd ){ bots = await bot_.findOne({id: `bot_${msg.user}` }); utd=false} 
-        if(!bots || !bots.autoreaction || bots.autoreaction==="false") return
-        else if (bots.autoreaction === 'true' || (icmd && bots.autoreaction === 'cmd') ) {let emokis = emojis[Math.floor(Math.random() * (emojis.length))];await react(msg,emokis)}
+        if(!bots || !bots.autoreaction || bots.autoreaction==="false") return "AUTO REACTION DISABLED"
+        if((bots.autoreaction === 'group' && !msg.isGroup) || (bots.autoreaction === 'pm' && msg.isGroup)   ) return "pm/group not found for auto reaction"
+
+
+
+        else if (bots.autoreaction === 'true' || bots.autoreaction === 'group' || bots.autoreaction === 'pm' || (icmd && bots.autoreaction === 'cmd') ) {let emokis = emojis[Math.floor(Math.random() * (emojis.length))];await react(msg,emokis)}
         else if (bots.autoreaction === 'all') {var mokis = mojis[Math.floor(Math.random() * (mojis.length))]; await react(msg,mokis) }
     }catch(e){console.log("error in auto reatcion : " , e)}
 })
