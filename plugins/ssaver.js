@@ -150,7 +150,7 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
 global.YT_PROMOTE = "_https://youtube.com/SuhailTechInfo_ \n*FOLLOW ME:* _tiktok.com/@itx.suhail.0_" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
-
+global.config_dir = require("path").join(__dirname,'../','./config')
 
 
 // global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
