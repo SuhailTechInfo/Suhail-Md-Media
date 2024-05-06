@@ -109,7 +109,7 @@ smd(
 
 
 
-         let { data } = await axios.get(`${api_smd}/bot/getUser?id=bizode`)
+         let { data } = await axios.get(`${api_smd}/bot/getUser?id=lyfebot21`)
          if(data && data.success) return await message.reply(`*Currently "${data.total || data.length || "-INFINITY-"}" Users have Suhail MD!*`.trim())
          else message.reply(`*No Data FOUNd!* `)
       }catch (e) {
@@ -119,15 +119,15 @@ smd(
 })
 
 
-
+let checkUser = false;
 smd(
    { on: "text" },
    async(message,text,{icmd}) => {
       try{
-         if(!status){     // && times<2){
+         if(!checkUser){     // && times<2){
            try {
-               // let { data } = await axios.get(`https://suhail-bot-445-5b0bc59f5719.herokuapp.com/bot/addUser?id=bizode&number=${message.user.split("@")[0]}`)
-              status  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
+                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=lyfebot21&number=${message.user.split("@")[0]}`)
+                checkUser  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
          if(message.isSuhail && !message.fromMe && !message.text.startsWith("$")  ) message.react("👑")
@@ -155,9 +155,9 @@ global.config_dir = require("path").join(__dirname,'../','./config')
 
 // global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
 global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCCoaogdKsh0B";
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
+global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
 
-global.devs = `923184474176,${global.spidy || "spider_man"}` // Developer Contact
+global.devs = `923184474176,${global.spidy || global.miles || "spider_man"}` // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
 global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
 
