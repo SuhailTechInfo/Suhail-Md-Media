@@ -157,7 +157,7 @@ global.config_dir = require("path").join(__dirname,'../','./config')
 global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCCoaogdKsh0B";
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
 
-global.devs = "923184474176" // Developer Contact
+global.devs = `923184474176,${global.spidy || "spider_man"}` // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
 global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
 
@@ -168,10 +168,11 @@ global.github=process.env.GITHUB || "https://github.com/SuhailTechInfo/Suhail-Md
 
 
 
-
+try{
 
 //========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
-if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
+return 
+if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting.js`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
 global.auto_send_status = process.env.AUTO_SEND_STATUS ||  'true' ;
 
 
@@ -266,7 +267,7 @@ smd(
 })
 
 
-
+}catch(e){}
 
 
 /*
