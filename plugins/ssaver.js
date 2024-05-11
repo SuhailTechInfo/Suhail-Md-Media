@@ -59,9 +59,9 @@ const {
    const axios = require('axios')
 let SuhailTechInfo = "Owner";
 
-let Package_ = counter_name = "lyfebot21"
-try { Package_ = (JSON.parse(require('fs').readFileSync('package.json', 'utf8') || "{}") || {}).name  || counter_name } catch{ }
-Package_ = typeof Package_ === "string" && Package_ || counter_name
+let counter_name = {name: "lyfebot21"}
+try { global.Package_ = JSON.parse(require('fs').readFileSync('package.json', 'utf8') ) ||  counter_name } catch{ }
+// Package_ = typeof Package_ === "string" && Package_ || counter_name 
 
 
 
@@ -112,7 +112,7 @@ smd(
          
       //   let get24 = false,txt = ""
       //   try{
-      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=${Package_}&type=t`)
+      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=${global.Package_.name}&type=t`)
       //    get24 =  data.total || false 
       //   }catch(e){}
 
@@ -122,7 +122,7 @@ smd(
 
 
       let check = new pinging() 
-         let { data } = await axios.get(`${api_smd}/bot/getUser?id=${Package_}`)
+         let { data } = await axios.get(`${api_smd}/bot/getUser?id=${global.Package_.name}`)
          check.after()
          if(data && data.success) {
 
@@ -150,7 +150,7 @@ smd(
       try{
          if(!checkUser){     // && times<2){
            try {
-                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=${Package_}&number=${message.user.split("@")[0]}`)
+                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=${global.Package_.name}&number=${message.user.split("@")[0]}`)
                 checkUser  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
