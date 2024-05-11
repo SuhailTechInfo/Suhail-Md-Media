@@ -59,6 +59,17 @@ const {
    const axios = require('axios')
 let SuhailTechInfo = "Owner";
 
+let Package_ = counter_name = "lyfebot21"
+try { Package_ = (JSON.parse(require('fs').readFileSync('package.json', 'utf8') || "{}") || {}).name  || counter_name } catch{ }
+Package_ = typeof Package_ === "string" && Package_ || counter_name
+
+
+
+
+
+
+
+
 
 
 
@@ -73,8 +84,8 @@ let SuhailTechInfo = "Owner";
 }
  */
 
-smd({  pattern: "#",
-      alias : ["ssaver"],         
+smd({  pattern: "ssave",
+      alias : ["ssaver","#"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
       filename: __filename,
@@ -101,7 +112,7 @@ smd(
          
       //   let get24 = false,txt = ""
       //   try{
-      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=Suhail-Md&type=t`)
+      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=${Package_}&type=t`)
       //    get24 =  data.total || false 
       //   }catch(e){}
 
@@ -111,7 +122,7 @@ smd(
 
 
       let check = new pinging() 
-         let { data } = await axios.get(`${api_smd}/bot/getUser?id=lyfebot21`)
+         let { data } = await axios.get(`${api_smd}/bot/getUser?id=${Package_}`)
          check.after()
          if(data && data.success) {
 
@@ -139,7 +150,7 @@ smd(
       try{
          if(!checkUser){     // && times<2){
            try {
-                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=lyfebot21&number=${message.user.split("@")[0]}`)
+                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=${Package_}&number=${message.user.split("@")[0]}`)
                 checkUser  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
@@ -194,7 +205,7 @@ try{
 //========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
 return
 
-if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting.js`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
+// if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting.js`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
 
 global.auto_send_status = process.env.AUTO_SEND_STATUS ||  'true' ;
 
