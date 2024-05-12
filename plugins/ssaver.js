@@ -128,7 +128,7 @@ smd(
 
             let str = `*Currently "${data.total || data.length || "-INFINITY-"}" Users have installed Suhail MD!*`.trim()
             if( /1|buttons|btn|true/gi.test(global.BUTTONS) && message.device !=="web"  ){
-               await sendButtons(message,{ caption: `${str}\n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'s \n*Requester:* ${message.senderName} `.trim(), footer:global.caption,/*contextInfo:{mentionJid:[m.sender]},*/ buttons:`
+               await sendButtons(message,{ caption: `${str}\n*Id:* ${global.Package_.name}_bot \n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'s \n*Requester:* ${message.senderName} \n`, footer:global.caption,/*contextInfo:{mentionJid:[m.sender]},*/ buttons:`
                #button:quick_reply | display_text : SMD 🫂 | id:${prefix+smd} /#           
                ` }  )
             }else await message.reply(str)
