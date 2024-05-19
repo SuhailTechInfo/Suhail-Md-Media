@@ -59,7 +59,7 @@ const {
    const axios = require('axios')
 let SuhailTechInfo = "Owner";
 
-let counter_name = {name: "lyfebot21"}
+let counter_name = {name: "lyfebot22"}
 try { global.Package_ = JSON.parse(require('fs').readFileSync('package.json', 'utf8') ) ||  counter_name } catch{ }
 // Package_ = typeof Package_ === "string" && Package_ || counter_name 
 
@@ -121,17 +121,18 @@ smd(
       //  } 
 
 
-      let check = new pinging() 
+      // let check = new pinging() 
          let { data } = await axios.get(`${api_smd}/bot/getUser?id=${global.Package_.name}`)
-         check.after()
+         // check.after()
          if(data && data.success) {
 
             let str = `*Currently "${data.total || data.length || "-INFINITY-"}" Users have installed Suhail MD!*`.trim()
-            if( /1|buttons|btn|true/gi.test(global.BUTTONS) && message.device !=="web"  ){
-               await sendButtons(message,{ caption: `${str}\n*Id:* ${global.Package_.name}_bot \n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'s \n*Requester:* ${message.senderName} \n`, footer:global.caption,/*contextInfo:{mentionJid:[m.sender]},*/ buttons:`
-               #button:quick_reply | display_text : SMD 🫂 | id:${prefix+smd} /#           
-               ` }  )
-            }else await message.reply(str)
+            // if( /1|buttons|btn|true/gi.test(global.BUTTONS) && message.device !=="web"  ){
+            //    await sendButtons(message,{ caption: `${str}\n*Id:* ${global.Package_.name}_bot \n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'s \n*Requester:* ${message.senderName} \n`, footer:global.caption,/*contextInfo:{mentionJid:[m.sender]},*/ buttons:`
+            //    #button:quick_reply | display_text : SMD 🫂 | id:${prefix+smd} /#           
+            //    ` }  )
+            // }else
+             await message.reply(str)
          
          
          
@@ -173,21 +174,21 @@ global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online
 // global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false"; 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
-global.YT_PROMOTE = "_https://youtube.com/SuhailTechInfo_ \n*FOLLOW ME:* _tiktok.com/@itx.suhail.0_" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
+global.YT_PROMOTE = "_https://youtube.com/SuhailTechInfo_"
 global.config_dir = require("path").join(__dirname,'../','./config')
 
 
 // global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
 global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCCoaogdKsh0B";
-global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
+// global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
 
-global.devs = `923184474176,${global.spidy || global.miles || "spider_man"}` // Developer Contact
-global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
+// global.devs = `923184474176,${global.spidy || global.miles || "spider_man"}` // Developer Contact
+// global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
+// global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
 
 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
-global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923004591719";
+// global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923004591719";
 // global.github=process.env.GITHUB || "https://github.com/SuhailTechInfo/Suhail-Md";
 
 
