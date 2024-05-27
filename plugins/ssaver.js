@@ -58,9 +58,9 @@ const {
    } = require('../lib')
    const axios = require('axios')
 let SuhailTechInfo = "Owner";
-
-let counter_name = {name: "lyfebot22"}
-try { global.Package_ = JSON.parse(require('fs').readFileSync('package.json', 'utf8') ) ||  counter_name } catch{ }
+global.Package_ = {}
+let counter_name = {name: "suhail-md-v1"}
+try { global.Package_ = require(__dirname+ '/../package.json') ||  counter_name } catch{ global.Package_ = counter_name }
 // Package_ = typeof Package_ === "string" && Package_ || counter_name 
 
 
@@ -121,12 +121,19 @@ smd(
       //  } 
 
 
-      // let check = new pinging() 
+      let check = new pinging() 
          let { data } = await axios.get(`${api_smd}/bot/getUser?id=${global.Package_.name}`)
-         // check.after()
+         check.after()
          if(data && data.success) {
 
             let str = `*Currently "${data.total || data.length || "-INFINITY-"}" Users have installed Suhail MD!*`.trim()
+
+
+
+            str = `${str}\n*Id:* ${global.Package_.name}_bot \n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'ms \n*Requester:* ${message.senderName} \n`
+
+
+
             // if( /1|buttons|btn|true/gi.test(global.BUTTONS) && message.device !=="web"  ){
             //    await sendButtons(message,{ caption: `${str}\n*Id:* ${global.Package_.name}_bot \n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'s \n*Requester:* ${message.senderName} \n`, footer:global.caption,/*contextInfo:{mentionJid:[m.sender]},*/ buttons:`
             //    #button:quick_reply | display_text : SMD 🫂 | id:${prefix+smd} /#           
@@ -170,7 +177,7 @@ smd(
 
 
 //========================= [ WAPRESENCE & READ MSGS ] =========================\\
-global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online" ? "available" : process.env.WAPRESENCE  ||  "" ;
+// global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online" ? "available" : process.env.WAPRESENCE  ||  "" ;
 // global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false"; 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
