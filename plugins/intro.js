@@ -1,4 +1,4 @@
-/**
+/
 
 //══════════════════════════════════════════════════════════════════════════════════════════════════════//
 //                                                                                                      //
@@ -45,7 +45,7 @@ CURRENTLY RUNNING ON BETA VERSION!!
 const { smd, Config,smdBuffer,  prefix } = require('../lib')
 
 
-var surl = 'https://github.com/SuhailTechInfo/Suhail-Md' //
+var surl = 'https://github.com/Devilboy7718/Suhail-Md'
 const number = '923184474176'
 var name = ' Suhail Tech'
 var body = '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯'
