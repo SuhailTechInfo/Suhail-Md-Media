@@ -202,15 +202,16 @@ global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCC
 
 
 //********* EID IMAGES THEME FOR EID DAYS ************
-userImages = `
-https://brainybutterfly.com/s/img/wp-content/uploads/2022/05/Eid-Ul-Adha-Quotes-Brainy-Butterfly-768x502.jpg,
-https://static.vecteezy.com/system/resources/thumbnails/002/381/160/small_2x/eid-al-adha-background-free-vector.jpg,
-https://pakobserver.net/wp-content/uploads/2023/06/fg.png,
-https://img.freepik.com/free-vector/eid-al-adha-mubarak-islamic-culture-religious-bokeh-background-vector_1055-10600.jpg,
-https://imgeng.jagran.com/images/2023/jun/Eid-Al-Adha-mubarak1687999781071.jpg
+// userImages = `
+// https://brainybutterfly.com/s/img/wp-content/uploads/2022/05/Eid-Ul-Adha-Quotes-Brainy-Butterfly-768x502.jpg,
+// https://static.vecteezy.com/system/resources/thumbnails/002/381/160/small_2x/eid-al-adha-background-free-vector.jpg,
+// https://pakobserver.net/wp-content/uploads/2023/06/fg.png,
+// https://img.freepik.com/free-vector/eid-al-adha-mubarak-islamic-culture-religious-bokeh-background-vector_1055-10600.jpg,
+// https://imgeng.jagran.com/images/2023/jun/Eid-Al-Adha-mubarak1687999781071.jpg
 
 
-`.replace(/\n/g,"").trim()
+
+// `.replace(/\n/g,"").trim()
 //*****************************************************
 
 
