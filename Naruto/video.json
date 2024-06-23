@@ -1,134 +1,109 @@
-{ 
-    
-    "Auther": "SUHAIL TECH INFO",
-    "waMe": "https://wa.me/923184474176",
-    "result": [
-        {  "video":"1", "url" : "https://i.imgur.com/dtmFXd8.mp4"  },
-        {  "video":"2", "url" : "https://i.imgur.com/sIhrW6W.mp4"  }, 
-        {  "video":"3", "url" : "https://i.imgur.com/X5l475S.mp4"  },
-        {  "video":"4", "url" : "https://i.imgur.com/TiEGMsr.mp4"  }, 
-        {  "video":"5", "url" : "https://i.imgur.com/Ke2dTVN.mp4"  }, 
-        {  "video":"6", "url" : "https://i.imgur.com/7EFuoBX.mp4"  }, 
-        {  "video":"7", "url" : "https://i.imgur.com/yU6Hamq.mp4"  }, 
-        {  "video":"8", "url" : "https://i.imgur.com/vRhd6LQ.mp4"  }, 
-        {  "video":"9", "url" : "https://i.imgur.com/QzklVv3.mp4"  }, 
-        {  "video":"10", "url" : "https://i.imgur.com/z4RaZU2.mp4"  },
-        {  "video":"11", "url" : "https://i.imgur.com/zzJQ1Ui.mp4"  },
-        {  "video":"12", "url" : "https://i.imgur.com/c0FQI38.mp4"  },
-        {  "video":"13", "url" : "https://i.imgur.com/ZLzyQOn.mp4"  },
-        {  "video":"14", "url" : "https://i.imgur.com/gPO82AP.mp4"  },
-        {  "video":"15", "url" : "https://i.imgur.com/zmUux4l.mp4"  },
-        {  "video":"16", "url" : "https://i.imgur.com/x5GxnkV.mp4"  },
-        {  "video":"17", "url" : "https://i.imgur.com/ASzJpPZ.mp4"  },
-        {  "video":"18", "url" : "https://i.imgur.com/TwCIqqf.mp4"  },
-        {  "video":"19", "url" : "https://i.imgur.com/5yhfQMf.mp4"  },
-        {  "video":"20", "url" : "https://i.imgur.com/wXvwjzL.mp4"  },
-        {  "video":"21", "url" : "https://i.imgur.com/7DvtLG5.mp4"  },
-        {  "video":"22", "url" : "https://i.imgur.com/8O8i3yx.mp4"  },
-        {  "video":"23", "url" : "https://i.imgur.com/rHA4ZzI.mp4"  },
-        {  "video":"24", "url" : "https://i.imgur.com/3MhcTew.mp4"  },
-        {  "video":"25", "url" : "https://i.imgur.com/sH5uwgJ.mp4"  },
-        {  "video":"26", "url" : "https://i.imgur.com/mTfVrsn.mp4"  },
-        {  "video":"27", "url" : "https://i.imgur.com/ksDUG6Z.mp4"  },
-        {  "video":"28", "url" : "https://i.imgur.com/yv7HG4j.mp4"  },
-        {  "video":"29", "url" : "https://i.imgur.com/coOiYZ9.mp4"  },
-        {  "video":"30", "url" : "https://i.imgur.com/d6iVked.mp4"  },
-        {  "video":"31", "url" : "https://i.imgur.com/BH9sZ4F.mp4"  },
-        {  "video":"32", "url" : "https://i.imgur.com/IBE0kfo.mp4"  },
-        {  "video":"33", "url" : "https://i.imgur.com/fGAQXtx.mp4"  },
-        {  "video":"34", "url" : "https://i.imgur.com/Ok8Kiud.mp4"  },
-        {  "video":"35", "url" : "https://i.imgur.com/B0q2ZgC.mp4"  },
-        {  "video":"36", "url" : "https://i.imgur.com/lwCPPKQ.mp4"  },
-        {  "video":"37", "url" : "https://i.imgur.com/Qjxtiih.mp4"  },
-        {  "video":"38", "url" : "https://i.imgur.com/PswMc0S.mp4"  },
-        {  "video":"39", "url" : "https://i.imgur.com/yyaXl08.mp4"  },
-        {  "video":"40", "url" : "https://i.imgur.com/bq4zids.mp4"  },
-        {  "video":"41", "url" : "https://i.imgur.com/KaETgdn.mp4"  }, 
-        {  "video":"42", "url" : "https://i.imgur.com/oUI9LJr.mp4"  },
-        {  "video":"43", "url" : "https://i.imgur.com/v2XV3WZ.mp4"  },
-        {  "video":"44", "url" : "https://i.imgur.com/TffgSKf.mp4"  },
-        {  "video":"45", "url" : "https://i.imgur.com/o7kCjGX.mp4"  },
-        {  "video":"46", "url" : "https://i.imgur.com/Xlfrn9h.mp4"  },
-        {  "video":"47", "url" : "https://i.imgur.com/7ScJi43.mp4"  },
-        {  "video":"48", "url" : "https://i.imgur.com/CKueT4B.mp4"  },
-        {  "video":"49", "url" : "https://i.imgur.com/mwJiQdJ.mp4"  },
-        {  "video":"50", "url" : "https://i.imgur.com/wenZCk5.mp4"  },
-        {  "video":"51", "url" : "https://i.imgur.com/Z3d1Ztj.mp4"  },
-        {  "video":"52", "url" : "https://i.imgur.com/KQzlzeP.mp4"  },
-        {  "video":"53", "url" : "https://i.imgur.com/dJsnQcq.mp4"  },
-        {  "video":"54", "url" : "https://i.imgur.com/aKBpzbu.mp4"  },
-        {  "video":"55", "url" : "https://i.imgur.com/4230pmK.mp4"  },
-        {  "video":"56", "url" : "https://i.imgur.com/XMyH5gW.mp4"  },
-        {  "video":"57", "url" : "https://i.imgur.com/ViZvnw4.mp4"  },
-        {  "video":"58", "url" : "https://i.imgur.com/s0vNoa1.mp4"  },
-        {  "video":"59", "url" : "https://i.imgur.com/RDXdqll.mp4"  },
-        {  "video":"60", "url" : "https://i.imgur.com/8Uf34lT.mp4"  },
-        {  "video":"61", "url" : "https://i.imgur.com/kLFmq4S.mp4"  },
-        {  "video":"62", "url" : "https://i.imgur.com/8EgObNI.mp4"  },
-        {  "video":"63", "url" : "https://i.imgur.com/OXeSJaJ.mp4"  },
-        {  "video":"64", "url" : "https://i.imgur.com/19GCb4k.mp4"  },
-        {  "video":"65", "url" : "https://i.imgur.com/esaWJVe.mp4"  },
-        {  "video":"66", "url" : "https://i.imgur.com/wSkXizF.mp4"  },
-        {  "video":"67", "url" : "https://i.imgur.com/tyMCaRX.mp4"  },
-        {  "video":"68", "url" : "https://i.imgur.com/a0mH88a.mp4"  },
-        {  "video":"69", "url" : "https://i.imgur.com/FB7CIdf.mp4"  },
-        {  "video":"70", "url" : "https://i.imgur.com/2QCYLEf.mp4"  },
-        {  "video":"71", "url" : "https://i.imgur.com/Y2GABz5.mp4"  },
-        {  "video":"72", "url" : "https://i.imgur.com/Ul7ecC6.mp4"  },
-        {  "video":"73", "url" : "https://i.imgur.com/xMJNSr6.mp4"  },
-        {  "video":"74", "url" : "https://i.imgur.com/lS1GWIX.mp4"  },
-        {  "video":"75", "url" : "https://i.imgur.com/yfSximi.mp4"  },
-        {  "video":"76", "url" : "https://i.imgur.com/SbUMOM4.mp4"  },
-        {  "video":"77", "url" : "https://i.imgur.com/6iCwEPS.mp4"  },
-        {  "video":"78", "url" : "https://i.imgur.com/gA7Zcy1.mp4"  },
-        {  "video":"79", "url" : "https://i.imgur.com/4RoU5Jv.mp4"  },
-        {  "video":"80", "url" : "https://i.imgur.com/ZEK6Rm0.mp4"  },
-        {  "video":"81", "url" : "https://i.imgur.com/JkLVDf5.mp4"  },
-        {  "video":"82", "url" : "https://i.imgur.com/whUDt3C.mp4"  },
-        {  "video":"83", "url" : "https://i.imgur.com/IMTbVow.mp4"  },
-        {  "video":"84", "url" : "https://i.imgur.com/TZOi5Al.mp4"  },
-        {  "video":"85", "url" : "https://i.imgur.com/kn8tFpn.mp4"  },
-        {  "video":"86", "url" : "https://i.imgur.com/7x0NWtl.mp4"  },
-        {  "video":"87", "url" : "https://i.imgur.com/dixgnla.mp4"  },
-        {  "video":"88", "url" : "https://i.imgur.com/0uUHDp3.mp4"  },
-        {  "video":"89", "url" : "https://i.imgur.com/22ch70B.mp4"  },
-        {  "video":"90", "url" : "https://i.imgur.com/IsxaZ1y.mp4"  },
-        {  "video":"91", "url" : "https://i.imgur.com/WHf38sX.mp4"  },
-        {  "video":"92", "url" : "https://i.imgur.com/fmsoM62.mp4"  },
-        {  "video":"93", "url" : "https://i.imgur.com/LNcKlut.mp4"  },
-        {  "video":"94", "url" : "https://i.imgur.com/wKp5am9.mp4"  },
-        {  "video":"95", "url" : "https://i.imgur.com/qzfm1vy.mp4"  },
-        {  "video":"96", "url" : "https://i.imgur.com/TUc1prx.mp4"  },
-        {  "video":"97", "url" : "https://i.imgur.com/fHNEXaM.mp4"  },
-        {  "video":"98", "url" : "https://i.imgur.com/UzWK9yP.mp4"  },
-        {  "video":"99", "url" : "https://i.imgur.com/ou4K5mI.mp4"  },
-        {  "video":"100", "url" : "https://i.imgur.com/ReiuFSS.mp4"  },
-        {  "video":"101", "url" : "https://i.imgur.com/DpHODBH.mp4"  },
-        {  "video":"102", "url" : "https://i.imgur.com/4jinWU2.mp4"  },
-        {  "video":"103", "url" : "https://i.imgur.com/Rowvh0q.mp4"  },
-        {  "video":"104", "url" : "https://i.imgur.com/4rNiRHx.mp4"  },
-        {  "video":"105", "url" : "https://i.imgur.com/eBK3Ijo.mp4"  },
-        {  "video":"106", "url" : "https://i.imgur.com/sP560UU.mp4"  },
-        {  "video":"107", "url" : "https://i.imgur.com/ILZbH1j.mp4"  },
-        {  "video":"108", "url" : "https://i.imgur.com/BiO2wlh.mp4"  },
-        {  "video":"109", "url" : "https://i.imgur.com/aDuKJyL.mp4"  },
-        {  "video":"110", "url" : "https://i.imgur.com/c04XPvW.mp4"  },
-        {  "video":"111", "url" : "https://i.imgur.com/Nglfe8K.mp4"  },
-        {  "video":"112", "url" : "https://i.imgur.com/bywGFLK.mp4"  },
-        {  "video":"113", "url" : "https://i.imgur.com/aQs4Wox.mp4"  },
-        {  "video":"114", "url" : "https://i.imgur.com/MbBN6HS.mp4"  },
-        {  "video":"115", "url" : "https://i.imgur.com/b640js5.mp4"  },
-        {  "video":"116", "url" : "https://i.imgur.com/wqEqMRN.mp4"  },
-        {  "video":"117", "url" : "https://i.imgur.com/DHWwPFJ.mp4"  },
-        {  "video":"118", "url" : "https://i.imgur.com/c7ZnRoV.mp4"  },
-        {  "video":"119", "url" : "https://i.imgur.com/iLEf2vH.mp4"  },
-        {  "video":"120", "url" : "https://i.imgur.com/VcUt45Y.mp4"  },
-        {  "video":"121", "url" : "https://i.imgur.com/fs39XIs.mp4"  },
-        {  "video":"122", "url" : "https://i.imgur.com/XUhpWRR.mp4"  },
-        {  "video":"123", "url" : "https://i.imgur.com/5ACESF0.mp4"  }, 
-        {  "video":"124", "url" : "https://i.imgur.com/ICM88Nd.mp4"  }, 
-        {  "video":"125", "url" : "https://i.imgur.com/CWT9H7K.mp4"  },
-        {  "video":"126", "url" : "https://i.imgur.com/3y9JcTn.mp4"  }
+/**
 
-] 
+
+
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+
+//                                                                                                      //
+
+//                                ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ ＢＥＴＡ                                   //
+
+//                                                                                                      // 
+
+//                                         Ｖ：1．2．2                                                   // 
+
+//                                                                                                      // 
+
+//            ███████╗██╗   ██╗██╗  ██╗ █████╗ ██╗██╗         ███╗   ███╗██████╗                        //
+
+//            ██╔════╝██║   ██║██║  ██║██╔══██╗██║██║         ████╗ ████║██╔══██╗                       //
+
+//            ███████╗██║   ██║███████║███████║██║██║         ██╔████╔██║██║  ██║                       //
+
+//            ╚════██║██║   ██║██╔══██║██╔══██║██║██║         ██║╚██╔╝██║██║  ██║                       //
+
+//            ███████║╚██████╔╝██║  ██║██║  ██║██║███████╗    ██║ ╚═╝ ██║██████╔╝                       //
+
+//            ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝     ╚═╝╚═════╝                        //
+
+//                                                                                                      //
+
+//                                                                                                      //
+
+//                                                                                                      //
+
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+
+
+
+CURRENTLY RUNNING ON BETA VERSION!!
+
+*
+
+   * @project_name : Suhail-Md
+
+   * @author : Suhail Tech Info
+
+   * @youtube : https://www.youtube.com/c/@SuhailTechInfo
+
+   * @infoription : Suhail-Md ,A Multi-functional whatsapp user bot.
+
+   * @version 1.2.2 
+
+*
+
+   * Licensed under the  GPL-3.0 License;
+
+* 
+
+   * ┌┤Created By Suhail Tech Info.
+
+   * © 2023 Suhail-Md ✭ ⛥.
+
+   * plugin date : 11/18/2023
+
+* 
+
+   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+
+   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+
+   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+
+   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+
+   * SOFTWARE.
+
+**/
+
+
+
+
+
+
+
+const _0x231187=_0x444b;(function(_0x38d486,_0x34a878){const _0x11a61e=_0x444b,_0x12034a=_0x38d486();while(!![]){try{const _0x3bf853=-parseInt(_0x11a61e(0x1a5))/0x1*(-parseInt(_0x11a61e(0x1b9))/0x2)+parseInt(_0x11a61e(0x1b6))/0x3+-parseInt(_0x11a61e(0x1c5))/0x4+-parseInt(_0x11a61e(0x1a4))/0x5*(-parseInt(_0x11a61e(0x1a7))/0x6)+parseInt(_0x11a61e(0x1c4))/0x7+parseInt(_0x11a61e(0x19f))/0x8*(parseInt(_0x11a61e(0x19d))/0x9)+-parseInt(_0x11a61e(0x1ba))/0xa;if(_0x3bf853===_0x34a878)break;else _0x12034a['push'](_0x12034a['shift']());}catch(_0x234055){_0x12034a['push'](_0x12034a['shift']());}}}(_0x52b2,0x46623));const {smd,tlang,botpic,prefix,Config,bot_}=require('../lib');let bgmm=![];function _0x444b(_0x4ca784,_0x4d03ee){const _0x52b292=_0x52b2();return _0x444b=function(_0x444bfc,_0x3f8296){_0x444bfc=_0x444bfc-0x19d;let _0x141e5b=_0x52b292[_0x444bfc];return _0x141e5b;},_0x444b(_0x4ca784,_0x4d03ee);}smd({'cmdname':_0x231187(0x1c2),'alias':[_0x231187(0x1c6)],'desc':_0x231187(0x1ad),'fromMe':!![],'type':_0x231187(0x1a2),'use':_0x231187(0x1ab),'filename':__filename},async(_0x5c3dd1,_0x543e4e)=>{const _0x4c9131=_0x231187;try{bgmm=await bot_[_0x4c9131(0x1b5)]({'id':_0x4c9131(0x1b0)+_0x5c3dd1[_0x4c9131(0x1af)]})||await bot_[_0x4c9131(0x1b4)]({'id':_0x4c9131(0x1b0)+_0x5c3dd1['user']});let _0x446f76=_0x543e4e[_0x4c9131(0x1a0)]()['split']('\x20')[0x0][_0x4c9131(0x1b1)]();if(_0x446f76==='on'||_0x446f76===_0x4c9131(0x1b3)||_0x446f76==='act'){if(bgmm['antiviewonce']===_0x4c9131(0x1bb))return await _0x5c3dd1[_0x4c9131(0x1c3)](_0x4c9131(0x1bd));return await bot_[_0x4c9131(0x1b7)]({'id':_0x4c9131(0x1b0)+_0x5c3dd1[_0x4c9131(0x1af)]},{'antiviewonce':'true'}),await _0x5c3dd1[_0x4c9131(0x1c3)](_0x4c9131(0x1a3));}else{if(_0x446f76===_0x4c9131(0x1a1)||_0x446f76===_0x4c9131(0x19e)||_0x446f76===_0x4c9131(0x1aa)){if(bgmm[_0x4c9131(0x1c2)]===_0x4c9131(0x1a9))return await _0x5c3dd1[_0x4c9131(0x1c3)](_0x4c9131(0x1b2));return await bot_[_0x4c9131(0x1b7)]({'id':_0x4c9131(0x1b0)+_0x5c3dd1[_0x4c9131(0x1af)]},{'antiviewonce':'false'}),await _0x5c3dd1[_0x4c9131(0x1c3)]('*AntiViewOnce\x20Succesfully\x20deactivated*');}else return await _0x5c3dd1['send']('*_Use\x20on/off\x20to\x20enable/disable\x20antiViewOnce!_*');}}catch(_0x4bb48d){await _0x5c3dd1['error'](_0x4bb48d+_0x4c9131(0x1c1),_0x4bb48d);}}),smd({'on':_0x231187(0x1b8)},async(_0x4a4a25,_0x1400fa)=>{const _0x5419f2=_0x231187;try{if(!bgmm)bgmm=await bot_['findOne']({'id':_0x5419f2(0x1b0)+_0x4a4a25[_0x5419f2(0x1af)]});if(bgmm&&bgmm['antiviewonce']&&bgmm['antiviewonce']===_0x5419f2(0x1bb)){let _0x52bb9a={'key':{..._0x4a4a25['key']},'message':{'conversation':_0x5419f2(0x1c0)}},_0x58b72c=await _0x4a4a25[_0x5419f2(0x1ac)][_0x5419f2(0x1be)](_0x4a4a25[_0x5419f2(0x1bf)]);await _0x4a4a25['bot']['sendMessage'](_0x4a4a25['from'],{[_0x4a4a25[_0x5419f2(0x1ae)]['split']('Message')[0x0]]:{'url':_0x58b72c},'caption':_0x4a4a25[_0x5419f2(0x1a6)]},{'quoted':_0x52bb9a});}}catch(_0x6010c1){console[_0x5419f2(0x1bc)](_0x5419f2(0x1a8),_0x6010c1);}});function _0x52b2(){const _0x3d8121=['turn\x20On/Off\x20auto\x20viewOnce\x20Downloder','mtype2','user','bot_','trim','*AntiViewOnce\x20already\x20disabled*','enable','new','findOne','1319721HZzNyw','updateOne','viewonce','4cxscwO','5141930eXNOYT','true','log','*AntiViewOnce\x20already\x20enabled!*','downloadAndSaveMediaMessage','msg','```[VIEWONCE\x20DETECTED]\x20downloading!```','\x0a\x0aCommand:\x20AntiViewOnce\x20','antiviewonce','reply','2095464xwGVcI','1845308yLDLvE','antivv','9JbGUAK','disable','1501768qvKsvW','toLowerCase','off','general','*AntiViewOnce\x20Succesfully\x20enabled*','185305vrBmaH','75763QASGck','body','30kfGtcN','error\x20while\x20getting\x20antiviewOnce\x20media\x0a,\x20','false','deact','<on/off>','bot'];_0x52b2=function(){return _0x3d8121;};return _0x52b2();}
+
+
+
+
+
+
+
+
+
+/*
+
+{
+
+   pattern: "antivv",
+
+   type: "notes",
+
 }
+
+ */
