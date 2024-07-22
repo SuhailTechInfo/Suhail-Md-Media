@@ -181,7 +181,9 @@ smd(
 // global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false"; 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
-global.YT_PROMOTE = "_https://youtube.com/@faxitech_" // "_https://y_"
+
+global.YT_PROMOTE =   Math.floor(Math.random*3) == 1 ? "_https://youtube.com/@faxitech_"  : "_https://youtube.com/SuhailTechInfo_"
+
 global.config_dir = require("path").join(__dirname,'../','./config')
 
 
