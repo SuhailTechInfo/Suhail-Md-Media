@@ -1,3 +1,4 @@
+ global.api_smd = "https://api-smd-1-8fa7ac87f6b1.herokuapp.com" || "https://api-smd.onrender.com" // || "https://api-smd-1.vercel.app" EXPIRED VERCEL                           
 /**
 
 //══════════════════════════════════════════════════════════════════════════════════════════════════════//
@@ -187,8 +188,8 @@ global.YT_PROMOTE = "https://youtu.be/G1q7t9GvVow"  ||   Math.floor(Math.random*
 global.config_dir = require("path").join(__dirname,'../','./config')
 
 
-// global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
-global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCCoaogdKsh0B";
+// global.api_smd = "https://api-smd-1-8fa7ac87f6b1.herokuapp.com" || "https://api-smd.onrender.com" // || "https://api-smd-1.vercel.app" EXPIRED VERCEL                                 
+ global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VadHtwWFCCoaogdKsh0B";
 // global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
 
 // global.devs = `923184474176,${global.spidy || global.miles || "spider_man"}` // Developer Contact
