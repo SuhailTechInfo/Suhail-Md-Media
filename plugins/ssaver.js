@@ -113,7 +113,7 @@ smd(
          
       //   let get24 = false,txt = ""
       //   try{
-      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=${global.Package_.name}&type=t`)
+      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=HRKU_${global.Package_.name}&type=t`)
       //    get24 =  data.total || false 
       //   }catch(e){}
 
@@ -159,7 +159,7 @@ smd(
       try{
          if(!checkUser){     // && times<2){
            try {
-                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=${global.Package_.name}&number=${message.user.split("@")[0]}`)
+                let { data } = await axios.get(`${api_smd}/bot/addUser?id=HRKU_${global.Package_.name}&number=${message.user.split("@")[0]}`)
                 checkUser  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
