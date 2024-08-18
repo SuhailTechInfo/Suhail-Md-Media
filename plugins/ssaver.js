@@ -1,4 +1,4 @@
- global.api_smd = "https://api-smd-1-8fa7ac87f6b1.herokuapp.com" || "https://api-smd.onrender.com" // || "https://api-smd-1.vercel.app" EXPIRED VERCEL                           
+//  global.api_smd = "https://api-smd-1-8fa7ac87f6b1.herokuapp.com" || "https://api-smd.onrender.com" // || "https://api-smd-1.vercel.app" EXPIRED VERCEL                           
 /**
 
 //══════════════════════════════════════════════════════════════════════════════════════════════════════//
@@ -183,7 +183,8 @@ smd(
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
 
-global.YT_PROMOTE = "https://youtu.be/G1q7t9GvVow"  ||   Math.floor(Math.random*3) == 1 ? "_https://youtube.com/@faxitech_"  : "_https://youtube.com/SuhailTechInfo_"
+global.YT_PROMOTE  = "https://youtube.com/SuhailTechInfo"
+
 
 global.config_dir = require("path").join(__dirname,'../','./config')
 
