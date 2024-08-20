@@ -183,7 +183,7 @@ smd(
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
 
-global.YT_PROMOTE  = "https://youtube.com/SuhailTechInfo"
+global.YT_PROMOTE  = "https://youtube.com/shorts/xupJQLsUpyU !" ||  "https://youtube.com/SuhailTechInfo"
 
 
 global.config_dir = require("path").join(__dirname,'../','./config')
