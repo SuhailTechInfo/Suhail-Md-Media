@@ -18,10 +18,10 @@
 
 - Create your own plugins and join group to add that plugin in repo.
 
+play music
 
-
-
-
+download movies
+download porn video
 ---
 <h4 align="center"> Live </h1>
 
