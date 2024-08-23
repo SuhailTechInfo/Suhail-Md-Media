@@ -1,12 +1,12 @@
-# Suhail-Md-Media
+#yonahraj
 
 
 
 
-<h1 align="center"> Suhail Md Plugins </h1>
+<h1 align="center"> yonahraj Plugins </h1>
 <div align="center">
 <br /> 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Suhail-plugin-list" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=yonahraj&label=Visitors%20count&color=10d9c3&style=plastic" alt="yonahraj-plugin-list" /> </p>
 
 
 ᴄʟɪᴄᴋ ᴡᴀ ʟᴏɢᴏ ᴛᴏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 👇 
