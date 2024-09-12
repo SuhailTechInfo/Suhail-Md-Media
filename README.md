@@ -1,16 +1,16 @@
-# Suhail-Md-Media
+# isihaka-md-media
 
 
 
 
-<h1 align="center"> Suhail Md Plugins </h1>
+<h1 align="center"> isihaka md </h1>
 <div align="center">
 <br /> 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Suhail-plugin-list" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=isihakaabel=Visitors%20count&color=10d9c3&style=plastic" alt="isihaka-plugin-list" /> </p>
 
 
 ᴄʟɪᴄᴋ ᴡᴀ ʟᴏɢᴏ ᴛᴏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 👇 
-<br> [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643)
+<br> [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/IVBBsUOuXj39rObtWnOis2)
   <div align="center"  >
 <h4 align="center">Plugins</h1>
 
@@ -27,7 +27,7 @@
 
 Live time
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/live.js
+https://raw.githubusercontent.com/SuhailTechInfo/isihaka-Md-Media/main/plugins/live.js
 ```
 - ᴜsᴀɢᴇ ᴏғ ᴛʜɪs ᴘʟᴜɢɪɴ : You can know which time is Now
 ---
@@ -36,7 +36,7 @@ https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/li
 
 SEnds  Animated Teddy 
 ```
-https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/plugins/teddy.js
+https://raw.githubusercontent.com/isihakaTechInfo/Suhail-Md-Media/main/plugins/teddy.js
 ```
 ---
 <h4 align="center">  auto forward (EditAble)</h1>
