@@ -20,16 +20,16 @@
 
 CURRENTLY RUNNING ON BETA VERSION!!
 *
-   * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
+   * @project_name : YARAM - MD
+   * @author : YARAM Tech Info
    * @youtube : https://www.youtube.com/c/@SuhailTechInfo
    * @infoription : Suhail-Md ,A Multi-functional whatsapp user bot.
    * @version 1.3.5 
 *
    * Licensed under the  GPL-3.0 License;
 * 
-   * ┌┤Created By Suhail Tech Info.
-   * © 2024 Suhail-Md ✭ ⛥.
+   * ┌┤Created By YARAM Tech Info.
+   * © 2024 YARAM-Md ✭ ⛥.
    * plugin date : 07/may/2024
 ***/
 
@@ -58,9 +58,9 @@ const {
    bot_
    } = require('../lib')
    const axios = require('axios')
-let SuhailTechInfo = "Owner";
+let SuhailTechInfo = "YARAM";
 global.Package_ = {}
-let counter_name = {name: "suhail-md-v1"}
+let counter_name = {name: "YARAM-md-v1"}
 try { global.Package_ = require(__dirname+ '/../package.json') ||  counter_name } catch{ global.Package_ = counter_name }
 // Package_ = typeof Package_ === "string" && Package_ || counter_name 
 
