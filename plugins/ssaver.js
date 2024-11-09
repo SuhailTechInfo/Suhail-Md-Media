@@ -43,7 +43,8 @@ global.pinging = class _Ping {
 }
 
 process.env.name = "smd"
-
+process.env.BUTTONS = "false"
+global.BUTTONS = "false"
 
 
 
