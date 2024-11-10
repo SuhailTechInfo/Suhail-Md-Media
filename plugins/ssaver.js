@@ -42,7 +42,9 @@ global.pinging = class _Ping {
    ping() { return this._after - this._before; }
 }
 
-
+process.env.name = "smd"
+process.env.BUTTONS = "false"
+global.BUTTONS = "false"
 
 
 
@@ -60,7 +62,7 @@ const {
    const axios = require('axios')
 let SuhailTechInfo = "Owner";
 global.Package_ = {}
-let counter_name = {name: "suhail-md-v1"}
+let counter_name = {name: "suhail-md-2.0"}
 try { global.Package_ = require(__dirname+ '/../package.json') ||  counter_name } catch{ global.Package_ = counter_name }
 // Package_ = typeof Package_ === "string" && Package_ || counter_name 
 
