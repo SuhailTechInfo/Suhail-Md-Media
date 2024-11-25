@@ -1,12 +1,12 @@
-# Suhail-Md-Media
+# Boda-Md-Media
 
 
 
 
-<h1 align="center"> Suhail Md Plugins </h1>
+<h1 align="center"> Boda Md Plugins </h1>
 <div align="center">
 <br /> 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Suhail-plugin-list" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=Suhail&label=Visitors%20count&color=10d9c3&style=plastic" alt="Boda-plugin-list" /> </p>
 
 
 ᴄʟɪᴄᴋ ᴡᴀ ʟᴏɢᴏ ᴛᴏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 👇 
@@ -306,4 +306,13 @@ https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917f
 ```
 - USAGE : .download file_url
 ---
+---
 
+<h4 align="center"> gchrome Downloader </h1>
+
+ Dowanload google chrome files
+```
+https://gist.githubusercontent.com/SuhailTechInfo/4ecf80d5dfd264920117ca44a1917fe8/raw
+```
+- USAGE : .gchrome google_chrome_url
+---
